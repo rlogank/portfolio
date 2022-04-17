@@ -12,7 +12,7 @@ function App() {
     <>
       <Nav />
       <Hero />
-      <div data-aos="fade-up" data-aos-delay="900">
+      <div data-aos="fade-up">
         <Portfolio />
       </div>
       <Reviews />
