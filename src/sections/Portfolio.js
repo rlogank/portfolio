@@ -81,7 +81,7 @@ const Portfolio = () => {
           <div
             data-aos="fade-up"
             data-aos-delay="600"
-            className="grid w-full gap-5 rounded-lg p-5 lg:grid-cols-2 lg:gap-10 xl:grid-cols-3"
+            className="grid w-full gap-5 rounded-lg lg:grid-cols-2 lg:gap-10 xl:grid-cols-3"
           >
             {projects.map((i) => {
               return (
