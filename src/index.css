@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  overflow-x: hidden;
+}
+
+
+.background--custom {
+  background-color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  overflow: hidden;
+  z-index: -2;
+  top: 0;
+  left: 0;
+}
+
+canvas#canvas {
+  z-index: -1;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-12deg) scale(2) translateY();
+  --gradient-color-1: #1d4ed8;
+  --gradient-color-2: #2563eb;
+  --gradient-color-3: #2563eb;
+  --gradient-color-4: #1d4ed8;
+  --gradient-speed: 0.000006;
+}
+
+.custom-shape-divider-bottom-1649789393 {
+  position: absolute;
+  top: 58%;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1649789393 svg {
+  position: relative;
+  display: block;
+  width: calc(239% + 1.3px);
+  height: 112px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1649789393 .shape-fill {
+  fill: #ffffff;
+}
+
