@@ -42,7 +42,7 @@ const Skills = () => {
     <Wrapper>
       <div className="relative flex min-h-[50vh] w-full flex-col items-center justify-center gap-5 px-5 lg:flex-row">
         <div data-aos="fade-up" className="flex justify-center lg:w-1/2">
-          <img src={skills} className="w-1/2" />
+          <img alt="skills" src={skills} className="w-1/2" />
         </div>
         <div className="flex flex-col justify-center gap-5 lg:w-1/2">
           <div className="text-4xl font-extrabold tracking-tight lg:text-5xl">

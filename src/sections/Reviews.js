@@ -60,6 +60,7 @@ const Reviews = () => {
               className="mx-auto flex w-full max-w-[540px] gap-10 rounded-lg bg-white p-10 shadow-lg lg:max-w-full"
             >
               <img
+              alt="portfolio"
                 src={r.image}
                 className="hidden aspect-square h-32 w-32 self-center rounded-full object-cover shadow-md lg:flex"
               />
@@ -67,6 +68,7 @@ const Reviews = () => {
                 <div className="flex justify-between">
                   <div className="flex w-full flex-col gap-5">
                     <img
+                    alt="portfolio"
                       src={r.image}
                       className="flex aspect-square h-32 w-32 self-center rounded-full object-cover shadow-md lg:hidden"
                     />

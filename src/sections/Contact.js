@@ -9,7 +9,7 @@ import {
   SiTwitter,
   SiUpwork,
 } from "react-icons/si";
-import { FaChevronCircleUp, FaChevronUp } from "react-icons/fa";
+import { FaChevronCircleUp } from "react-icons/fa";
 AOS.init();
 
 export default function Contact() {

@@ -1,6 +1,5 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useRef } from "react";
 AOS.init();
 
 const Hero = () => {
@@ -13,7 +12,7 @@ const Hero = () => {
       data-aos="fade-up"
       data-aos-delay="150"
       className="flex w-full justify-center px-5"
-    >
+    > 
       <div className="flex h-[80vh] flex-col items-center justify-center gap-5 pt-20 text-white">
         <div
           data-aos="fade-up"
