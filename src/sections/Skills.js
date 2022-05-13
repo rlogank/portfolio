@@ -44,7 +44,7 @@ const Skills = () => {
         <div data-aos="fade-up" className="flex justify-center lg:w-1/2">
           <img alt="skills" src={skills} className="w-1/2" />
         </div>
-        <div className="flex flex-col justify-center gap-5 lg:w-1/2">
+        <div className="flex flex-col justify-center gap-2.5 lg:w-1/2">
           <div className="text-4xl font-extrabold tracking-tight lg:text-5xl">
             <div data-aos="fade-up" data-aos-delay="300">
               What<span className="text-blue-600"> I know</span>.
@@ -53,7 +53,7 @@ const Skills = () => {
           <div
             data-aos="fade-up"
             data-aos-delay="450"
-            className="pb-1.5 text-lg"
+            className="pb-10 text-lg"
           >
             I thoroughly enjoy adding new skills to my arsenal of
               web-knowledge.

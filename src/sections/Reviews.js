@@ -41,7 +41,7 @@ const Reviews = () => {
 
   return (
     <WrapperGray>
-      <div className="mx-auto mb-10 flex flex-col justify-center gap-3 text-center lg:w-1/2">
+      <div className="mx-auto mb-10 flex flex-col justify-center gap-2.5 text-center lg:w-1/2">
         <div className="text-4xl font-extrabold tracking-tight lg:text-5xl">
           <div data-aos="fade-up" data-aos-delay="300">
             My <span className="text-blue-600"> testimonials</span>.
@@ -50,7 +50,7 @@ const Reviews = () => {
         <div
           data-aos="fade-up"
           data-aos-delay="450"
-          className="mx-auto w-5/6 pb-1.5 text-center text-lg"
+          className="mx-auto w-5/6 pb-10 text-center text-lg"
         >
                       I strive to perform high-quality work to ensure 100% satisfaction.
             These are real, verifiable testimonials.

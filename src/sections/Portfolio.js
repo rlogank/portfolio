@@ -7,15 +7,14 @@ import WrapperTop from "../wrappers/WrapperTop";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import DividerBottom from "../components/DividerBottom";
-import {
-  FaChevronCircleRight,
-  FaChevronRight,
-  FaExternalLinkAlt,
-  FaPlusCircle,
-} from "react-icons/fa";
+import { FaChevronRight, FaPlusCircle } from "react-icons/fa";
+import clsx from "clsx";
 AOS.init();
 
 const Portfolio = () => {
+  const scrollToContact = () => {
+    document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+  };
   const projects = [
     {
       title: "Hollowverse",
@@ -87,15 +86,15 @@ const Portfolio = () => {
           <div
             data-aos="fade-up"
             data-aos-delay="450"
-            className="mb-10 max-w-[595px] pb-1.5 text-center text-lg"
+            className="max-w-[595px] pb-10 text-left text-lg"
           >
             A collection of my latest works; both commercial and personal.
           </div>
           <div className="grid w-full gap-5 lg:grid-cols-2 lg:gap-10 xl:grid-cols-2">
             {projects.map((i, index) => {
               return (
-                <div data-aos="fade-up" data-aos-delay="600" key={index} className>
-                  <div className="flex shrink cursor-pointer select-none flex-col justify-between gap-5 border-t-4 border-blue-600 bg-gray-100 p-5 transition hover:scale-[98%] active:scale-[96%] lg:p-10 h-full duration-100">
+                <div data-aos="fade-up" data-aos-delay="600" key={index}>
+                  <div className="flex h-full shrink select-none flex-col justify-between gap-5 border-t-4 border-blue-600 bg-gray-100 p-5 transition-all duration-700 hover:border-blue-500 lg:p-10">
                     <div className="flex flex-col items-center gap-5 lg:flex-row lg:gap-10">
                       <img
                         src={i.image}
@@ -105,21 +104,28 @@ const Portfolio = () => {
                       <div className="flex flex-col gap-2.5">
                         <div className="flex items-center justify-between">
                           <h2 className="text-xl font-semibold">{i.title}</h2>
-                          <a
-                            href={i.link}
-                            rel="noreferrer"
-                            target="_blank"
-                            className="flex items-center gap-1.5 rounded-md bg-gray-200 px-2 py-1"
-                          >
-                            Visit
-                            <FaChevronRight className="text-xs" />
-                          </a>
+                         
                         </div>
 
                         <div className="absolute top-0 bg-black text-2xl font-bold text-black">
                           {i.name}
                         </div>
                         <p>{i.description}</p>
+                        {i.link ? (
+                            <a
+                              href={i.link}
+                              rel="noreferrer"
+                              target="_blank"
+                              className="flex self-start items-center gap-1.5 rounded-md font-medium text-blue-600 transition-all hover:gap-2"
+                            >
+                              Visit
+                              <FaChevronRight className="text-sm" />
+                            </a>
+                          ) : (
+                            <div className="text-neutral-500">
+                              In development
+                            </div>
+                          )}
                       </div>
                     </div>
                   </div>
@@ -127,7 +133,10 @@ const Portfolio = () => {
               );
             })}
             <div data-aos="fade-up" data-aos-delay="600">
-              <div className="flex h-full shrink cursor-pointer select-none flex-col items-center justify-center gap-2.5 border-t-4 border-blue-600 bg-gray-100 p-5 text-2xl text-gray-400  transition hover:scale-[98%] active:scale-[96%] lg:p-10">
+              <div
+                onClick={scrollToContact}
+                className="flex h-full shrink cursor-pointer select-none flex-col items-center justify-center gap-2.5 border-t-4 border-gray-100 bg-gray-100 p-5 text-gray-400 transition-all duration-700 hover:text-gray-600 lg:p-10"
+              >
                 <FaPlusCircle />
                 Add a project
               </div>

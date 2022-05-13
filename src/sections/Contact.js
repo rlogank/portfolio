@@ -22,7 +22,7 @@ export default function Contact() {
         data-aos="fade-up"
         className="flex min-h-[50vh] w-full items-center justify-center self-center justify-self-center px-5 pt-20 pb-20 lg:pb-40 lg:pt-0"
       >
-        <div className="flex flex-col items-center justify-center gap-5 text-white">
+        <div className="flex flex-col items-center justify-center gap-2.5 text-white">
           <div
             data-aos="fade-up"
             data-aos-delay="150"
@@ -33,10 +33,10 @@ export default function Contact() {
           <div
             data-aos="fade-up"
             data-aos-delay="300"
-            className="max-w-[595px] pb-1.5 text-center text-lg"
+            className="max-w-[595px] pb-10 text-center"
           >
-            I am looking for my first web development job. In the meantime I am
-            doing freelance work.
+           I am looking to be employed! In the meantime I am doing freelance
+            work.
           </div>
           <Form />
         </div>
