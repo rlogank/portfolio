@@ -1,55 +1,76 @@
-// Other projects
-
-import burbl from "../images/burbl.png";
-import pern from "../images/pern.png";
-import burblSite from "../images/burbl-site.png";
-import bpSite from "../images/bp-site.png";
-import oldSite from "../images/old-site.png";
-import { SiTailwindcss, SiFirebase } from "react-icons/si";
-import { FaFolder, FaGithub, FaReact } from "react-icons/fa";
-import { GoLinkExternal } from "react-icons/go";
+import Builder from "../images/builder.webp";
+import Burbl from "../images/burbl.webp";
+import Exchange from "../images/exchange.webp";
+import Hollowverse from "../images/hollowverse.webp";
+import Pern from "../images/pern.webp";
 import WrapperTop from "../wrappers/WrapperTop";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import DividerBottom from "../components/DividerBottom";
+import {
+  FaChevronCircleRight,
+  FaChevronRight,
+  FaExternalLinkAlt,
+  FaPlusCircle,
+} from "react-icons/fa";
 AOS.init();
 
 const Portfolio = () => {
   const projects = [
     {
-      title: "Burbl",
-      body: "Realtime social media platform using Firebase. Featuring a full notification system, user mentions, replies, likes, online statuses, and more.",
-      image: burbl,
-      sitePic: burblSite,
-      stack: [<SiFirebase />, <FaReact />, <SiTailwindcss />],
-      link: "https://rlogank.com/burbl",
-      source: "https://github.com/rlogank/burbl",
-      completed: true,
-      type: "Social media",
-      visit: true,
+      title: "Hollowverse",
+      image: Hollowverse,
+      description:
+        "Read facts about popular celebrities. I was hired to convert the site from SCSS to TailwindCSS with a design overhaul.",
+      link: "https://hollowverse.com/elon-musk",
+      type: "Commercial",
+      primary: "NextJS",
+      secondary: "TailwindCSS",
+      third: "API",
     },
     {
-      title: "Finder UI",
-      body: "Since I develop on Mac, I made another portfolio that looks like Mac OS's Finder application! It has been a fun project so far, will be adding more features.",
-      sitePic: bpSite,
-      stack: [<FaReact />, <SiTailwindcss />],
-      link: "https://rlogank.com/finder-ui",
-      completed: true,
-      type: "Static",
-      source: "https://github.com/rlogank/OSX-Filesystem-UI-Portfolio",
-      visit: true,
+      title: "Tedex",
+      image: Exchange,
+      description:
+        "Trade cryptocurrencies easily. I was hired to lead the frontend development and design.",
+      link: "",
+      type: "Commercial",
+      primary: "ReactJS",
+      secondary: "TailwindCSS",
+      third: "API",
+    },
+    {
+      title: "Builder App",
+      image: Builder,
+      description:
+        "A React website builder that builds React websites. The goal is to make it impossible to create an ugly website.",
+      link: "",
+      type: "Personal",
+      primary: "ReactJS",
+      secondary: "TailwindCSS",
+      third: "API",
+    },
+    {
+      title: "Burbl",
+      image: Burbl,
+      description:
+        "My first big project - a social media application with all data updated in realtime - down to the profile view counter.",
+      link: "burbl",
+      type: "Personal",
+      primary: "ReactJS",
+      secondary: "TailwindCSS",
+      third: "Firebase",
     },
     {
       title: "PERN Post",
-      body: "My learning project for Websockets, PostgreSQL, ExpressJS, and the basics of devops. Hosted on a dedicated VPS with NGINX and PM2.",
-      image: pern,
-      sitePic: oldSite,
-      stack: [<FaReact />, <SiTailwindcss />],
-      link: "https://rlogank.com/pern",
-      completed: true,
-      type: "Static",
-      source: "https://github.com/rlogank/PERN-post",
-      visit: true,
+      image: Pern,
+      description:
+        "The tiniest chat platform ever. My learning project for PostgreSQL, Websockets, and Devops.",
+      link: "pern",
+      type: "Personal",
+      primary: "ReactJS",
+      secondary: "PSQL",
+      third: "ExpressJS",
     },
   ];
 
@@ -57,85 +78,60 @@ const Portfolio = () => {
     <>
       <DividerBottom />
       <WrapperTop>
-        <div className="-mt-[-10px] flex min-h-[50vh] w-full flex-col items-center justify-center gap-5">
+        <div className="flex min-h-[50vh] w-full flex-col items-start justify-center gap-2.5 text-neutral-700">
           <div className="text-4xl font-extrabold tracking-tight lg:text-5xl">
-            <div
-              data-aos="fade-up"
-              data-aos-delay="150"
-              className="mb-2.5 text-center text-base font-medium tracking-normal text-gray-400"
-            >
-              PORTFOLIO
-            </div>
             <div data-aos="fade-up" data-aos-delay="300">
-              My <span className="text-blue-600">recent projects</span>.
+              My <span className="text-blue-600">portfolio</span>.
             </div>
           </div>
           <div
             data-aos="fade-up"
             data-aos-delay="450"
-            className="max-w-[595px] pb-1.5 text-center text-lg"
+            className="mb-10 max-w-[595px] pb-1.5 text-center text-lg"
           >
-            These are my latest and greatest projects so far. I've got some more
-            on the way!
+            A collection of my latest works; both commercial and personal.
           </div>
-          <div
-            data-aos="fade-up"
-            data-aos-delay="600"
-            className="grid w-full gap-5 rounded-lg lg:grid-cols-2 lg:gap-10 xl:grid-cols-3"
-          >
-            {projects.map((i) => {
+          <div className="grid w-full gap-5 lg:grid-cols-2 lg:gap-10 xl:grid-cols-2">
+            {projects.map((i, index) => {
               return (
-                <>
-                  <div className="flex h-full flex-col justify-between gap-5 overflow-hidden rounded-2xl bg-gray-100 p-8 text-neutral-700">
-                    <div className="">
-                      <div className="flex h-full w-full items-center justify-between">
-                        <div className="flex aspect-square h-[40px] w-[40px] shrink-0 cursor-pointer rounded-lg transition">
-                          {i.image ? (
-                            <img
-                              src={i.image}
-                              alt="project"
-                              className="cursor-pointer"
-                            />
-                          ) : (
-                            <FaFolder className="flex self-center text-3xl text-amber-500" />
-                          )}
+                <div data-aos="fade-up" data-aos-delay="600" key={index} className>
+                  <div className="flex shrink cursor-pointer select-none flex-col justify-between gap-5 border-t-4 border-blue-600 bg-gray-100 p-5 transition hover:scale-[98%] active:scale-[96%] lg:p-10 h-full duration-100">
+                    <div className="flex flex-col items-center gap-5 lg:flex-row lg:gap-10">
+                      <img
+                        src={i.image}
+                        alt={i.name}
+                        className="aspect-square w-60 rounded-full border object-cover lg:w-40"
+                      />
+                      <div className="flex flex-col gap-2.5">
+                        <div className="flex items-center justify-between">
+                          <h2 className="text-xl font-semibold">{i.title}</h2>
+                          <a
+                            href={i.link}
+                            rel="noreferrer"
+                            target="_blank"
+                            className="flex items-center gap-1.5 rounded-md bg-gray-200 px-2 py-1"
+                          >
+                            Visit
+                            <FaChevronRight className="text-xs" />
+                          </a>
                         </div>
-                        <div className="flex w-full items-center ">
-                          <div className="ml-5 flex flex-col text-xl font-semibold tracking-tight">
-                            {i.title}
-                          </div>
+
+                        <div className="absolute top-0 bg-black text-2xl font-bold text-black">
+                          {i.name}
                         </div>
+                        <p>{i.description}</p>
                       </div>
                     </div>
-                    <div className="flex">{i.body}</div>
-                    <div className="ml-auto flex gap-5">
-                      {i.source && (
-                        <a
-                          href={i.source}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="flex cursor-pointer items-center gap-1 rounded-lg bg-gray-100 p-2 text-blue-600 transition hover:bg-gray-200 active:bg-gray-300"
-                        >
-                          <FaGithub />
-                          <div className="text-xs">Source code</div>
-                        </a>
-                      )}
-                      {i.visit && (
-                        <a
-                          href={i.link}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="flex cursor-pointer items-center gap-1 rounded-lg bg-blue-600 p-2 text-white outline-blue-300 transition hover:bg-blue-700 focus:outline active:bg-blue-800"
-                        >
-                          <GoLinkExternal />
-                          <div className="text-xs">Visit {i.name}</div>
-                        </a>
-                      )}
-                    </div>
                   </div>
-                </>
+                </div>
               );
             })}
+            <div data-aos="fade-up" data-aos-delay="600">
+              <div className="flex h-full shrink cursor-pointer select-none flex-col items-center justify-center gap-2.5 border-t-4 border-blue-600 bg-gray-100 p-5 text-2xl text-gray-400  transition hover:scale-[98%] active:scale-[96%] lg:p-10">
+                <FaPlusCircle />
+                Add a project
+              </div>
+            </div>
           </div>
         </div>
       </WrapperTop>

@@ -1,6 +1,8 @@
 import { FaStar } from "react-icons/fa";
-import client from "../images/not-raymond.jpg";
-import client2 from "../images/not-joris.jpg";
+import client from "../images/not-raymond.webp";
+import client2 from "../images/not-joris.webp";
+import client3 from "../images/not-teddy.webp";
+import client4 from "../images/client4.webp";
 import WrapperGray from "../wrappers/WrapperGray";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -9,6 +11,12 @@ AOS.init();
 const Reviews = () => {
   const reviewData = [
     {
+      body: `I asked Logan to give my website a "facelift." He came back with a beautiful and clean fully new design that looked better than all of the other 10 designs that I was evaluating at the time. And he implemented it in a day. Logan's skills are impressive, and I would highly recommend him!`,
+      name: "Michael K.",
+      details: "Web Developer, Private Client",
+      image: client4,
+    },
+    {
       body: `Logan was very helpful, patient and tried every route to fix my
       website issue. He successfully fixed the problem with me on the phone, and
       with his guidance I was able to see and learn from him. Would hire
@@ -16,14 +24,18 @@ const Reviews = () => {
       name: "Raymond K.",
       details: "Web Developer, Upwork Client",
       image: client,
-      id: 1,
+    },
+    {
+      body: "Logan is a hard working and dedicated individual I hired to create a front end interface.  Being a coder myself I can  tell that Logan's revisions and initial commits are of high quality and well thought-out. Will hire again.",
+      name: "Teddy M.",
+      details: "Backend Developer, Private Client",
+      image: client3,
     },
     {
       body: "Logan was well responsive and knowledgeable throughout the project. He exceeds expectations.",
       name: "Joris S.",
       details: "Real Estate Agent, Upwork Client",
       image: client2,
-      id: 2,
     },
   ];
 
@@ -31,15 +43,8 @@ const Reviews = () => {
     <WrapperGray>
       <div className="mx-auto mb-10 flex flex-col justify-center gap-3 text-center lg:w-1/2">
         <div className="text-4xl font-extrabold tracking-tight lg:text-5xl">
-          <div
-            data-aos="fade-up"
-            data-aos-delay="150"
-            className="mb-1 text-center text-base font-medium tracking-normal text-gray-400"
-          >
-            TESTIMONIALS
-          </div>
           <div data-aos="fade-up" data-aos-delay="300">
-            What <span className="text-blue-600"> my clients</span> say.
+            My <span className="text-blue-600"> testimonials</span>.
           </div>
         </div>
         <div
@@ -47,8 +52,8 @@ const Reviews = () => {
           data-aos-delay="450"
           className="mx-auto w-5/6 pb-1.5 text-center text-lg"
         >
-          I have recently started offering my services and acquiring clients. So
-          far, so good.
+                      I strive to perform high-quality work to ensure 100% satisfaction.
+            These are real, verifiable testimonials.
         </div>
       </div>
       <div className="mx-auto flex w-full flex-col gap-5 lg:w-2/3 lg:gap-10">
@@ -57,7 +62,7 @@ const Reviews = () => {
             <div
               data-aos="fade-up"
               data-aos-delay="550"
-              className="mx-auto flex w-full max-w-[540px] gap-10 rounded-lg bg-white p-10 shadow-lg lg:max-w-full"
+              className="mx-auto flex w-full max-w-[540px] gap-10 bg-white p-10 shadow-lg lg:max-w-full border-t-4 border-blue-600"
             >
               <img
               alt="portfolio"

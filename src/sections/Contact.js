@@ -28,7 +28,7 @@ export default function Contact() {
             data-aos-delay="150"
             className="text-center text-4xl font-extrabold tracking-tight lg:text-6xl"
           >
-            Get in touch.
+            Get in touch!
           </div>
           <div
             data-aos="fade-up"

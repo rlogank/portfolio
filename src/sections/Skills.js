@@ -46,15 +46,8 @@ const Skills = () => {
         </div>
         <div className="flex flex-col justify-center gap-5 lg:w-1/2">
           <div className="text-4xl font-extrabold tracking-tight lg:text-5xl">
-            <div
-              data-aos="fade-up"
-              data-aos-delay="150"
-              className="mb-2.5 text-left text-base font-medium tracking-normal text-gray-400"
-            >
-              SKILLS
-            </div>
             <div data-aos="fade-up" data-aos-delay="300">
-              I know a<span className="text-blue-600"> thing or two</span>.
+              What<span className="text-blue-600"> I know</span>.
             </div>
           </div>
           <div
@@ -62,8 +55,8 @@ const Skills = () => {
             data-aos-delay="450"
             className="pb-1.5 text-lg"
           >
-            Nothing makes me as excited as adding new skills to my arsenal of
-            web-knowledge!
+            I thoroughly enjoy adding new skills to my arsenal of
+              web-knowledge.
           </div>
           <div className="grid grid-cols-2 lg:gap-10">
             {skillsList.map((s) => {

@@ -3,18 +3,37 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta
-      name="viewport"
-      content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"
-    />
-    <meta name="theme-color" content="#467AF5" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#111827" />
+    <meta name="title" content="Logan Keene | Web Developer Portfolio" />
     <meta
       name="description"
-      content="Hi, I'm Logan. I am a web developer based in Southwest Florida. I enjoy building clean and concise web apps!"
+      content="Frontend Developer and designer providing custom website development using the latest web technologies like JavaScript, React JS, and Tailwind CSS."
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/touch-icon-webp" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://metatags.io/" />
+    <meta property="og:title" content="Logan Keene | Web Developer Portfolio" />
+    <meta
+      property="og:description"
+      content="I design and develop custom-built websites using the latest development technologies like React JS and Tailwind CSS."
+    />
+    <meta property="og:image" content="%PUBLIC_URL%/img.webp" />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://rlogank.com/" />
+    <meta
+      property="twitter:title"
+      content="Logan Keene | Web Developer Portfolio"
+    />
+    <meta
+      property="twitter:description"
+      content="I design and develop custom-built websites using the latest development technologies like React JS and Tailwind CSS."
+    />
+    <meta property="twitter:image" content="%PUBLIC_URL%/img.webp" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <title>Logan, React Web Developer</title>
+    <title>Logan Keene | Web Developer Portfolio</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
@@ -29,18 +48,6 @@
 
       gtag("config", "G-7EZ5XHCEJ2");
     </script>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <div class="background--custom">
-      <canvas id="canvas" />
-    </div>
-    <script src="https://cdn.jsdelivr.net/gh/greentfrapp/pocoloco@minigl/minigl.js"></script>
-    <script>
-      var gradient = new Gradient();
-      gradient.initGradient("#canvas");
-    </script>
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
@@ -50,5 +57,17 @@
         emailjs.init("user_tAQ7fCFjRQu6fmw4eBSXt");
       })();
     </script>
+     <div class="background--custom">
+      <canvas id="canvas" />
+    </div>
+    <script src="https://cdn.jsdelivr.net/gh/greentfrapp/pocoloco@minigl/minigl.js"></script>
+    <script>
+      var gradient = new Gradient();
+      gradient.initGradient("#canvas");
+    </script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
   </body>
 </html>
