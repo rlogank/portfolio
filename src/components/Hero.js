@@ -5,8 +5,8 @@ AOS.init();
 
 const Hero = () => {
   return (
-    <div className="relative w-full border-b px-2.5 py-20 transition-all dark:border-borderDark sm:px-5 md:py-40 lg:py-60">
-      <div className="mx-auto flex max-w-screen-lg flex-col items-center md:gap-5 lg:flex-row lg:gap-10">
+    <div className="relative w-full border-b px-2.5 h-[calc(100vh-56px)] transition-all dark:border-borderDark sm:px-5 md:py-40 lg:py-60 flex items-center">
+      <div className="mx-auto mb-[56px] flex max-w-screen-lg flex-col items-center md:gap-5 lg:flex-row lg:gap-10">
         <div className="w-full md:w-7/12">
           <div
             data-aos="fade"
