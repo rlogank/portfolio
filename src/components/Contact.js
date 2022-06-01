@@ -103,7 +103,7 @@ const Form = () => {
             <section
               data-aos="fade"
               data-aos-delay="200"
-              className="mx-auto max-w-screen-lg rounded-[4px] border-t-4 border-rose-500 bg-gray-100 p-2.5 shadow-md dark:border-rose-400 dark:bg-bgDarker md:p-5"
+              className="mx-auto max-w-screen-lg rounded-[4px] border-t-4 border-rose-500 bg-gray-100 p-5 shadow-md dark:border-rose-400 dark:bg-bgDarker md:p-5"
             >
               <form
                 className=""
