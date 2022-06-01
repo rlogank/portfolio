@@ -96,7 +96,7 @@ const Skills = () => {
               <button
                 className={`${
                   x.color
-                } relative z-20 aspect-square w-full cursor-pointer rounded-[4px] bg-white bg-opacity-30 p-5 transition-all hover:bg-opacity-100 hover:shadow-lg focus:shadow-none dark:border-bgDark dark:bg-bgDark dark:shadow-none dark:hover:text-rose-400 sm:p-10  ${
+                } relative z-20 aspect-square h-[105px] w-full cursor-pointer rounded-[4px] bg-white bg-opacity-30 p-5 transition-all hover:bg-opacity-100 hover:shadow-lg focus:shadow-none dark:border-bgDark dark:bg-bgDark dark:shadow-none dark:hover:text-rose-400 sm:p-10  ${
                   x.darkText
                     ? "text-neutral-700 transition-all hover:text-black dark:text-light "
                     : "text-neutral-700 hover:text-white dark:text-light "

@@ -46,7 +46,7 @@ const Reviews = () => {
         {reviewData.map((r) => {
           return (
             <div data-aos="fade">
-              <button className="mx-auto flex w-full max-w-screen-sm cursor-pointer select-none rounded-[4px] border-l-4 border-rose-500 bg-white p-5 shadow-md transition-all hover:scale-105 hover:shadow-lg focus:scale-100 focus:shadow-none active:shadow-none dark:border-rose-400 dark:bg-bgDark">
+              <button className="mx-auto flex w-full max-w-screen-sm cursor-pointer select-none rounded-[4px] border-l-4 border-rose-500 bg-white p-5 shadow-md transition-all lg:hover:scale-105 hover:shadow-lg focus:scale-100 focus:shadow-none active:shadow-none dark:border-rose-400 dark:bg-bgDark">
                 <div className="flex flex-col justify-center gap-2.5">
                   <div className="flex justify-between">
                     <div className="w-full">

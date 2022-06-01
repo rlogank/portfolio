@@ -36,6 +36,13 @@ const Nav = () => {
     },
   ];
 
+
+  const scrollToBottom = () => {
+    const bottom = document.getElementById("bottom")
+    bottom.scrollIntoView({behavior: "smooth"})
+  }
+
+
   return (
     <div
       data-aos="fade"
@@ -45,7 +52,7 @@ const Nav = () => {
         <div
           data-aos="fade"
           data-aos-delay="100"
-          className="flex items-center gap-1.5 font-semibold text-neutral-600 transition-all dark:text-light"
+          className="flex items-center gap-1.5 font-semibold text-neutral-600 transition-all dark:text-light w-2/6"
         >
           <SiCoderwall className="rotate-90 text-xs text-rose-600 dark:text-rose-400" />{" "}
           Logan <span className="hidden sm:block">Keene</span>
@@ -53,7 +60,7 @@ const Nav = () => {
         <div
           data-aos="fade"
           data-aos-delay="200"
-          className="flex items-center sm:mx-auto"
+          className="flex items-center sm:mx-auto w-full justify-center"
         >
           {social.map((s) => {
             return (
@@ -83,12 +90,12 @@ const Nav = () => {
         <div
           data-aos="fade"
           data-aos-delay="300"
-          className="flex items-center gap-2.5 transition-all"
+          className="flex items-center gap-2.5 transition-all w-2/6 justify-end"
         >
           <Toggle />
-          <button
+          <button onClick={scrollToBottom}
             className="flex aspect-square h-[36px] items-center justify-center rounded-md bg-rose-500 p-2.5 text-xs text-white 
-          transition-all hover:scale-105 hover:shadow-md focus:scale-100 focus:shadow-none active:shadow-none dark:bg-bgDarker dark:text-light"
+          transition-all lg:hover:scale-105 hover:shadow-md focus:scale-100 focus:shadow-none active:shadow-none dark:bg-bgDarker dark:text-light"
           >
             <FaEnvelope />
           </button>

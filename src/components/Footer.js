@@ -2,7 +2,7 @@ import { FaEnvelope, FaLocationArrow, FaPaperclip } from "react-icons/fa";
 import { SiCoderwall } from "react-icons/si";
 const Footer = () => {
   return (
-    <div className="select-none py-10 px-5 dark:bg-bgDarker lg:py-20 lg:px-10">
+    <div data-aos-offset="1000" className="select-none py-10 px-5 dark:bg-bgDarker lg:py-20 lg:px-10">
       <div className="mx-auto max-w-screen-lg">
         <div className="grid gap-10 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           <div className="col-span-2 grid sm:flex sm:flex-col md:col-span-4 lg:col-span-1">
@@ -153,6 +153,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <div className="" id="bottom"/>
     </div>
   );
 };

@@ -74,7 +74,7 @@ const Form = () => {
   };
 
   return (
-    <div className="w-full bg-gray-200 py-10 px-2.5 dark:bg-bgDarkest sm:px-5 md:py-20 lg:py-40">
+    <div className="w-full bg-gray-200 px-2.5 dark:bg-bgDarkest sm:px-5 md:py-20 lg:py-44">
       <div className="mx-auto flex max-w-screen-lg flex-col items-center justify-start">
         <div className="flex flex-col items-center gap-10 md:flex-row">
           <div className="">
@@ -180,7 +180,7 @@ const Form = () => {
                     className={
                       !valid
                         ? "ml-auto flex cursor-not-allowed items-center justify-center self-start rounded-[4px] bg-rose-500 px-3.5 py-2 text-sm font-medium text-rose-200 transition dark:bg-bgDark dark:text-grayed"
-                        : "ml-auto flex items-center justify-center self-start rounded-[4px] bg-rose-500 px-3.5 py-2 text-sm font-medium text-white outline outline-transparent transition hover:scale-105 hover:shadow-md focus:scale-100 focus:shadow-none dark:bg-rose-400 dark:text-bgDarkest"
+                        : "ml-auto flex items-center justify-center self-start rounded-[4px] bg-rose-500 px-3.5 py-2 text-sm font-medium text-white outline outline-transparent transition lg:hover:scale-105 hover:shadow-md focus:scale-100 focus:shadow-none dark:bg-rose-400 dark:text-bgDarkest"
                     }
                   >
                     {submitText ? (
