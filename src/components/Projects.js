@@ -2,13 +2,6 @@ import { FaChevronRight, FaGithub } from "react-icons/fa";
 
 const projects = [
   {
-    title: "Chat",
-    URL: "https://rlogank.com/chat",
-    type: "Personal",
-    body: "Real-time, Discord-esque chat application with channels and typing indicators.",
-    stack: ["React", "Tailwind", "Mongo", "Websockets"],
-  },
-  {
     title: "Site Builder",
     URL: "https://rlogank.com/site-builder",
     type: "Personal",
@@ -21,6 +14,13 @@ const projects = [
     type: "Personal",
     body: "My first big project - real-time social app with hashtags, mentions, and notifications.",
     stack: ["React", "Tailwind", "Firebase"],
+  },
+  {
+    title: "PERN Post",
+    URL: "https://hollowverse.com/",
+    type: "Client",
+    body: "PERN stands for PostgreSQL, Express, React, and Node - which are what this application was made with.",
+    stack: ["Next", "Tailwind"],
   },
   {
     title: "Hollowverse",
@@ -65,7 +65,7 @@ const Projects = () => {
                   target="_blank"
                   rel="noreferrer"
                   key={i}
-                  className="flex min-h-[138px] cursor-pointer select-none flex-col justify-between rounded-[4px] border-t-4 border-rose-500 bg-white bg-opacity-70 shadow-md transition-all lg:hover:scale-105 hover:shadow-lg focus:!scale-100 focus:shadow-none active:shadow-none dark:border-bgDark dark:bg-bgDarker dark:bg-opacity-100"
+                  className="flex min-h-[138px] cursor-pointer select-none flex-col justify-between rounded-[4px] border-t-4 border-rose-500 bg-white bg-opacity-70 shadow-md transition-all hover:shadow-lg focus:!scale-100 focus:shadow-none active:shadow-none dark:border-bgDark dark:bg-bgDarker dark:bg-opacity-100 lg:hover:scale-105"
                 >
                   <div className="flex flex-col gap-1 p-5">
                     <div className="flex items-center justify-between">
