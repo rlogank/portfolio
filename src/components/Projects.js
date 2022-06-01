@@ -23,25 +23,11 @@ const projects = [
     stack: ["React", "Tailwind", "Firebase"],
   },
   {
-    title: "Online Store",
-    URL: "https://rlogank.com/online-store",
-    type: "Personal",
-    body: "Landing page for a site that allows people to open online stores and sell products.",
-    stack: ["React", "Tailwind"],
-  },
-  {
     title: "Hollowverse",
     URL: "https://hollowverse.com/",
     type: "Client",
     body: "I was hired to convert the site from SCSS to Tailwind with a design overhaul.",
     stack: ["Next", "Tailwind"],
-  },
-  {
-    title: "Crypto Exchange",
-    URL: "https://rlogank.com/crypto-exchange",
-    type: "Client",
-    body: "I was hired to start constructing the frontend of a private crypto exchange.",
-    stack: ["React", "Tailwind"],
   },
 ];
 
