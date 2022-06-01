@@ -52,10 +52,10 @@ const Nav = () => {
         <div
           data-aos="fade"
           data-aos-delay="100"
-          className="flex items-center gap-1.5 font-semibold text-neutral-600 transition-all dark:text-light w-2/6"
+          className="flex items-center heading gap-1.5 text-lg font-semibold text-neutral-600 transition-all dark:text-light w-2/6"
         >
           <SiCoderwall className="rotate-90 text-xs text-rose-600 dark:text-rose-400" />{" "}
-          Logan <span className="hidden xs:block">Keene</span>
+          rlogank
         </div>
         <div
           data-aos="fade"
