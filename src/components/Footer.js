@@ -120,7 +120,7 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          <div data-aos="fade" offset="-200" data-aos-delay="300">
+          <div data-aos="fade" offset="-1000" data-aos-delay="300">
             <h2 className="mb-2.5 font-semibold">Information</h2>
             <div className="flex flex-col items-start gap-2.5 text-sm text-grayed">
               <div
