@@ -16,8 +16,8 @@ const projects = [
     stack: ["React", "Tailwind", "Express"],
   },
   {
-    title: "Social Media",
-    URL: "https://rlogank.com/social-media",
+    title: "Burbl",
+    URL: "https://rlogank.com/burbl",
     type: "Personal",
     body: "My first big project - real-time social app with hashtags, mentions, and notifications.",
     stack: ["React", "Tailwind", "Firebase"],
