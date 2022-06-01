@@ -36,10 +36,10 @@ const Hero = () => {
             data-aos-delay="700"
             className="mx-auto mt-4 flex justify-center gap-2.5 text-sm lg:justify-start"
           >
-            <button className="rounded-md bg-rose-500 px-3.5 py-2 font-medium text-white transition-all lg:hover:scale-105 hover:shadow-md focus:scale-100 focus:shadow-none active:shadow-none dark:bg-rose-400 dark:text-bgDarkest ">
+            <button className="rounded-md bg-rose-500 px-3.5 py-2 font-medium text-white transition-all lg:hover:scale-105 hover:shadow-md focus:!scale-100 focus:shadow-none active:shadow-none dark:bg-rose-400 dark:text-bgDarkest ">
               Contact
             </button>
-            <button className="rounded-md bg-gray-200 px-3.5 py-2 transition-all lg:hover:scale-105 hover:shadow-md focus:scale-100 focus:shadow-none active:shadow-none dark:bg-bgDark">
+            <button className="rounded-md bg-gray-200 px-3.5 py-2 transition-all lg:hover:scale-105 hover:shadow-md focus:!scale-100 focus:shadow-none active:shadow-none dark:bg-bgDark">
               Resume
             </button>
           </div>

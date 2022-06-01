@@ -95,7 +95,7 @@ const Nav = () => {
           <Toggle />
           <button onClick={scrollToBottom}
             className="flex aspect-square h-[36px] items-center justify-center rounded-md bg-rose-500 p-2.5 text-xs text-white 
-          transition-all lg:hover:scale-105 hover:shadow-md focus:scale-100 focus:shadow-none active:shadow-none dark:bg-bgDarker dark:text-light"
+          transition-all lg:hover:scale-105 hover:shadow-md focus:!scale-100 focus:shadow-none active:shadow-none dark:bg-bgDarker dark:text-light"
           >
             <FaEnvelope />
           </button>

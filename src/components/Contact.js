@@ -180,7 +180,7 @@ const Form = () => {
                     className={
                       !valid
                         ? "ml-auto flex cursor-not-allowed items-center justify-center self-start rounded-[4px] bg-rose-500 px-3.5 py-2 text-sm font-medium text-rose-200 transition dark:bg-bgDark dark:text-grayed"
-                        : "ml-auto flex items-center justify-center self-start rounded-[4px] bg-rose-500 px-3.5 py-2 text-sm font-medium text-white outline outline-transparent transition lg:hover:scale-105 hover:shadow-md focus:scale-100 focus:shadow-none dark:bg-rose-400 dark:text-bgDarkest"
+                        : "ml-auto flex items-center justify-center self-start rounded-[4px] bg-rose-500 px-3.5 py-2 text-sm font-medium text-white outline outline-transparent transition lg:hover:scale-105 hover:shadow-md !-100 focus:shadow-none dark:bg-rose-400 dark:text-bgDarkest"
                     }
                   >
                     {submitText ? (
