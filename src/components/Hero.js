@@ -1,9 +1,14 @@
 import Skills from "./Skills";
 import AOS from "aos";
+import resume from "../logan-keene-resume.pdf"
 import "aos/dist/aos.css";
 AOS.init();
 
 const Hero = () => {
+  const scrollToBottom = () => {
+    const bottom = document.getElementById("bottom")
+    bottom.scrollIntoView({behavior: "smooth"})
+  }
   return (
     <div className="relative w-full border-b px-2.5 h-[calc(100vh-56px)] transition-all dark:border-borderDark sm:px-5 md:py-40 lg:py-60 flex items-center">
       <div className="mx-auto mb-[56px] flex max-w-screen-lg flex-col items-center md:gap-5 lg:flex-row lg:gap-10">
@@ -36,12 +41,12 @@ const Hero = () => {
             data-aos-delay="700"
             className="mx-auto mt-4 flex justify-center gap-2.5 text-sm lg:justify-start"
           >
-            <button className="rounded-md bg-rose-500 px-3.5 py-2 font-medium text-white transition-all lg:hover:scale-105 hover:shadow-md focus:!scale-100 focus:shadow-none active:shadow-none dark:bg-rose-400 dark:text-bgDarkest ">
+            <button onClick={scrollToBottom} className="rounded-md bg-rose-500 px-3.5 py-2 font-medium text-white transition-all lg:hover:scale-105 hover:shadow-md focus:!scale-100 focus:shadow-none active:shadow-none dark:bg-rose-400 dark:text-bgDarkest ">
               Contact
             </button>
-            <button className="rounded-md bg-gray-200 px-3.5 py-2 transition-all lg:hover:scale-105 hover:shadow-md focus:!scale-100 focus:shadow-none active:shadow-none dark:bg-bgDark">
+            <a href={resume} target="_blank" rel="noreferrer" className="rounded-md bg-gray-200 px-3.5 py-2 transition-all lg:hover:scale-105 hover:shadow-md focus:!scale-100 focus:shadow-none active:shadow-none dark:bg-bgDark">
               Resume
-            </button>
+            </a>
           </div>
         </div>
         <div

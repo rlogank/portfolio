@@ -74,7 +74,7 @@ const Form = () => {
   };
 
   return (
-    <div className="w-full bg-gray-200 px-2.5 py-10 dark:bg-bgDarkest sm:px-5 md:py-20 lg:py-40">
+    <div id="bottom" className="w-full bg-gray-200 px-2.5 py-10 dark:bg-bgDarkest sm:px-5 md:py-20 lg:py-40">
       <div className="mx-auto flex max-w-screen-lg flex-col items-center justify-start">
         <div className="flex flex-col items-center gap-10 md:flex-row">
           <div className="">
