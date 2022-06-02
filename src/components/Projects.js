@@ -17,7 +17,7 @@ const projects = [
   },
   {
     title: "PERN Post",
-    URL: "https://hollowverse.com/",
+    URL: "https://rlogank.com/pern",
     type: "Client",
     body: "PERN stands for PostgreSQL, Express, React, and Node - which are what this application was made with.",
     stack: ["Next", "Tailwind"],
