@@ -89,7 +89,7 @@ const Nav = () => {
         <div
           data-aos="fade"
           data-aos-delay="300"
-          className="flex w-2/6 items-center justify-end gap-2.5 transition-all"
+          className="flex items-center justify-end gap-2.5 transition-all"
         >
           <Toggle />
           <button
@@ -97,7 +97,7 @@ const Nav = () => {
             className="flex h-[36px] items-center justify-center rounded-md bg-rose-600 p-2.5 text-xs text-white 
           transition-all gap-1.5 hover:shadow-md active:shadow-none dark:bg-bgDarker dark:text-light  font-medium"
           >
-            <FaEnvelope /> Contact
+            <FaEnvelope /> <span className="hidden sm:block">Contact</span>
           </button>
         </div>
       </div>

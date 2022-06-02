@@ -12,14 +12,14 @@ const Toggle = () => {
           onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
           className="flex h-[36px] items-center justify-center rounded-md bg-gray-100 p-2.5 text-xs text-neutral-600 transition-all active:scale-95 hover:shadow-md active:shadow-none dark:bg-bgDarker dark:text-light gap-1.5 font-medium"
         >
-          <FaSun /> Light mode
+          <FaSun /> <span className="hidden sm:block whitespace-nowrap">Light mode</span>
         </button>
       ) : (
         <button
           onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
           className="flex h-[36px] items-center justify-center rounded-md bg-gray-100 p-2.5 text-xs text-neutral-600 transition-all active:scale-95 hover:shadow-md gap-1.5 active:shadow-none dark:bg-bgDarker dark:text-light font-medium"
         >
-          <FaMoon className="text-[0.75rem]"/> Dark mode
+          <FaMoon className="text-[0.75rem]"/> <span className="hidden sm:block whitespace-nowrap">Dark mode</span>
         </button>
       )}
     </div>
