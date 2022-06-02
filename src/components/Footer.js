@@ -22,8 +22,7 @@ const Footer = () => {
               className="flex self-start text-sm text-gray-600 dark:text-gray-300 sm:w-3/5 lg:w-full"
             >
               I am a frontend web-developer that uses tools like React and
-              Tailwind to construct concise, functional web applications. I am
-              currently looking for a job.
+              Tailwind to construct concise, functional web applications.
             </p>
           </section>
           <section data-aos="fade" data-aos-delay="100">
