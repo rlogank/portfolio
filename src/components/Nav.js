@@ -36,35 +36,34 @@ const Nav = () => {
     },
   ];
 
-
   const scrollToBottom = () => {
-    const bottom = document.getElementById("bottom")
-    bottom.scrollIntoView({behavior: "smooth"})
-  }
-
+    const bottom = document.getElementById("bottom");
+    bottom.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
-    <div
+    <nav
       data-aos="fade"
       className="fixed z-[9999] flex h-[56px] w-full items-center border-b bg-white px-2.5 transition-all dark:border-borderDark dark:bg-bgDark"
     >
       <div className="mx-auto flex w-full max-w-screen-lg items-center justify-between">
-        <div
+        <h1
+          tabindex="0"
           data-aos="fade"
           data-aos-delay="100"
-          className="flex items-center heading gap-1.5 text-lg font-semibold text-neutral-600 transition-all dark:text-light w-2/6"
+          className="heading flex w-2/6 items-center gap-1.5 text-lg font-semibold text-neutral-600 transition-all dark:text-light"
         >
-          <SiCoderwall className="rotate-90 text-xs text-rose-600 dark:text-rose-400" />{" "}
-          rlogank
-        </div>
+          <SiCoderwall className="rotate-90 text-xs text-rose-600 dark:text-rose-400" />
+          <a href="https://rlogank.com/">rlogank</a>
+        </h1>
         <div
           data-aos="fade"
           data-aos-delay="200"
-          className="flex items-center sm:mx-auto w-full justify-center"
+          className="flex w-full items-center justify-center sm:mx-auto"
         >
           {social.map((s) => {
             return (
-              <>
+              <button>
                 <a
                   onMouseOver={() => setActiveItem(s.name)}
                   onMouseOut={() => setActiveItem("")}
@@ -83,25 +82,26 @@ const Nav = () => {
                   </div>
                   <div className="hidden sm:block">{s.name}</div>
                 </a>
-              </>
+              </button>
             );
           })}
         </div>
         <div
           data-aos="fade"
           data-aos-delay="300"
-          className="flex items-center gap-2.5 transition-all w-2/6 justify-end"
+          className="flex w-2/6 items-center justify-end gap-2.5 transition-all"
         >
           <Toggle />
-          <button onClick={scrollToBottom}
-            className="flex aspect-square h-[36px] items-center justify-center rounded-md bg-rose-500 p-2.5 text-xs text-white 
-          transition-all lg:hover:scale-105 hover:shadow-md focus:!scale-100 focus:shadow-none active:shadow-none dark:bg-bgDarker dark:text-light"
+          <button
+            onClick={scrollToBottom}
+            className="flex h-[36px] items-center justify-center rounded-md bg-rose-600 p-2.5 text-xs text-white 
+          transition-all gap-1.5 hover:shadow-md active:shadow-none dark:bg-bgDarker dark:text-light  font-medium"
           >
-            <FaEnvelope />
+            <FaEnvelope /> Contact
           </button>
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 

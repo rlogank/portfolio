@@ -23,36 +23,36 @@ const Reviews = () => {
   ];
 
   return (
-    <div className="mx-auto max-w-screen-lg py-10 px-2.5 sm:px-5 md:py-20 lg:py-40">
-      <div className="mx-auto mb-10 flex max-w-screen-lg flex-col items-center">
-        <div
+    <section className="mx-auto max-w-screen-lg py-10 px-2.5 sm:px-5 md:py-20 lg:py-40">
+      <header className="mx-auto mb-10 flex max-w-screen-lg flex-col items-center">
+        <h3
           data-aos="fade"
           className="heading text-center text-4xl font-bold tracking-tight transition-all md:text-4xl lg:text-5xl"
         >
           Some testimonials
-        </div>
-        <div
+        </h3>
+        <h3
           data-aos="fade"
-          className="heading text-center text-4xl font-bold tracking-tight text-rose-500 transition-all dark:text-rose-400 md:text-4xl lg:text-5xl"
+          className="heading text-center text-4xl font-bold tracking-tight text-rose-600 transition-all dark:text-rose-400 md:text-4xl lg:text-5xl"
         >
           about my work
-        </div>
-        <div data-aos="fade" className="mt-2.5 max-w-[535px] text-center">
+        </h3>
+        <p data-aos="fade" className="mt-2.5 max-w-[535px] text-center">
           I strive to perform high-quality work to ensure 100% satisfaction.
           These are real, verifiable testimonials that I have earned.
-        </div>
-      </div>
-      <div data-aos="fade" className="mx-auto grid w-full gap-2.5 sm:gap-5">
+        </p>
+      </header>
+      <section data-aos="fade" className="mx-auto grid w-full gap-2.5 sm:gap-5">
         {reviewData.map((r) => {
           return (
-            <div data-aos="fade">
-              <button className="mx-auto flex w-full max-w-screen-sm cursor-pointer select-none rounded-[4px] border-l-4 border-rose-500 bg-white p-5 shadow-md transition-all lg:hover:scale-105 hover:shadow-lg lg:focus:!scale-100 focus:shadow-none active:shadow-none dark:border-rose-400 dark:bg-bgDark">
+            <article data-aos="fade">
+              <button className="mx-auto flex w-full max-w-screen-sm cursor-pointer select-none rounded-[4px] border-l-4 border-rose-600 bg-white p-5 shadow-md transition-all hover:shadow-lg active:shadow-none dark:border-rose-400 dark:bg-bgDark active:scale-95">
                 <div className="flex flex-col justify-center gap-2.5">
                   <div className="flex justify-between">
                     <div className="w-full">
                       <div className="flex items-center justify-between">
-                        <div className="font-medium">{r.name}</div>
-                        <div className="ml-auto flex gap-1 self-center text-rose-500 dark:text-rose-400">
+                        <h4 className="font-medium">{r.name}</h4>
+                        <div className="ml-auto flex gap-1 self-center text-rose-600 dark:text-rose-400">
                           <FaStar />
                           <FaStar />
                           <FaStar />
@@ -60,19 +60,19 @@ const Reviews = () => {
                           <FaStar />
                         </div>
                       </div>
-                      <div className="text-left text-xs text-neutral-500 dark:text-grayed">
+                      <h5 className="text-left text-xs text-neutral-500 dark:text-gray-300">
                         {r.details}
-                      </div>
+                      </h5>
                     </div>
                   </div>
-                  <div className="text-left text-sm">{r.body}</div>
+                  <p className="text-left text-sm">{r.body}</p>
                 </div>
               </button>
-            </div>
+            </article>
           );
         })}
-      </div>
-    </div>
+      </section>
+    </section>
   );
 };
 

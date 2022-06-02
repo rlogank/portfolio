@@ -88,7 +88,7 @@ const Skills = () => {
   ];
 
   return (
-    <div className="w-full text-neutral-600 transition-all dark:text-light">
+    <section className="w-full text-neutral-600 transition-all dark:text-light">
       <div className="grid grid-cols-4 gap-2.5">
         {skillsList.map((x) => {
           return (
@@ -96,26 +96,26 @@ const Skills = () => {
               <button
                 className={`${
                   x.color
-                } relative z-20 aspect-square h-[105px] w-full cursor-pointer rounded-[4px] bg-white bg-opacity-30 p-5 transition-all hover:bg-opacity-100 hover:shadow-lg focus:shadow-none dark:border-bgDark dark:bg-bgDark dark:shadow-none dark:hover:text-rose-400 sm:p-10  ${
+                } relative focus:shadow-none z-20 aspect-square h-[105px] w-full cursor-pointer rounded-[4px] bg-white bg-opacity-30 p-5 transition-all hover:bg-opacity-100 hover:shadow-lg dark:border-bgDark dark:bg-bgDark dark:shadow-none dark:hover:text-rose-400 sm:p-10  ${
                   x.darkText
                     ? "text-neutral-700 transition-all hover:text-black dark:text-light "
                     : "text-neutral-700 hover:text-white dark:text-light "
                 } flex w-full flex-col items-center justify-center gap-2.5 p-2.5 transition-all md:aspect-square`}
               >
-                <div
+                <span
                   className={`heading select-none text-2xl font-bold tracking-tight transition-all md:text-3xl lg:text-4xl`}
                 >
                   {x.title}
-                </div>
-                <div className="heading select-none text-center text-[0.7rem] tracking-tight">
+                </span>
+                <h3 className="heading select-none text-center text-[0.7rem] tracking-tight">
                   {x.name}
-                </div>
+                </h3>
               </button>
             </>
           );
         })}
       </div>
-    </div>
+    </section>
   );
 };
 

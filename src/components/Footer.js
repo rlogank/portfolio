@@ -1,34 +1,34 @@
 import { FaEnvelope, FaLocationArrow, FaPaperclip } from "react-icons/fa";
 import { SiCoderwall } from "react-icons/si";
-import resume from "../logan-keene-resume.pdf"
+import resume from "../logan-keene-resume.pdf";
 const Footer = () => {
   return (
-    <div
+    <footer
       data-aos-offset="1000"
       className="select-none py-10 px-5 dark:bg-bgDarker lg:py-20 lg:px-10"
     >
       <div className="mx-auto max-w-screen-lg">
         <div className="grid gap-10 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-          <div className="col-span-2 grid sm:flex sm:flex-col md:col-span-4 lg:col-span-1">
-            <h2
+          <section className="col-span-2 grid sm:flex sm:flex-col md:col-span-4 lg:col-span-1">
+            <h4
               data-aos="fade"
               className="mb-2.5 flex items-center gap-1.5 font-semibold"
             >
               <SiCoderwall className="rotate-90 text-xs text-rose-600 dark:text-rose-400" />
               Logan Keene
-            </h2>
-            <div
+            </h4>
+            <p
               data-aos="fade"
-              className="flex self-start text-sm text-grayed sm:w-3/5 lg:w-full"
+              className="flex self-start text-sm text-gray-600 dark:text-gray-300 sm:w-3/5 lg:w-full"
             >
               I am a frontend web-developer that uses tools like React and
               Tailwind to construct concise, functional web applications. I am
               currently looking for a job.
-            </div>
-          </div>
-          <div data-aos="fade" data-aos-delay="100">
-            <h2 className="mb-2.5 font-semibold">Work</h2>
-            <div className="flex flex-col items-start gap-2.5 text-sm text-grayed">
+            </p>
+          </section>
+          <section data-aos="fade" data-aos-delay="100">
+            <h4 className="mb-2.5 font-semibold">Work</h4>
+            <div className="flex flex-col items-start gap-2.5 text-sm text-gray-600 dark:text-gray-300">
               <a
                 href="https://rlogank.com/chat"
                 rel="noreferrer"
@@ -78,10 +78,10 @@ const Footer = () => {
                 Crypto Exchange
               </a>
             </div>
-          </div>
-          <div data-aos="fade" data-aos-delay="200">
-            <h2 className="mb-2.5 font-semibold">External</h2>
-            <div className="flex flex-col items-start gap-2.5 text-sm text-grayed">
+          </section>
+          <section data-aos="fade" data-aos-delay="200">
+            <h4 className="mb-2.5 font-semibold">External</h4>
+            <div className="flex flex-col items-start gap-2.5 text-sm text-gray-600 dark:text-gray-300">
               <a
                 href="https://github.com/rlogank"
                 rel="noreferrer"
@@ -123,10 +123,10 @@ const Footer = () => {
                 Upwork
               </a>
             </div>
-          </div>
-          <div data-aos="fade" offset="-1000" data-aos-delay="300">
-            <h2 className="mb-2.5 font-semibold">Information</h2>
-            <div className="flex flex-col items-start gap-2.5 text-sm text-grayed">
+          </section>
+          <section data-aos="fade" offset="-1000" data-aos-delay="300">
+            <h4 className="mb-2.5 font-semibold">Information</h4>
+            <div className="flex flex-col items-start gap-2.5 text-sm text-gray-600 dark:text-gray-300">
               <div
                 rel="noreferrer"
                 target="_blank"
@@ -154,10 +154,10 @@ const Footer = () => {
                 Resume
               </a>
             </div>
-          </div>
+          </section>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 
