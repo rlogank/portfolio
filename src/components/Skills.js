@@ -88,7 +88,7 @@ const Skills = () => {
   ];
 
   return (
-    <section className="w-full text-neutral-600 sm:transition-all dark:text-light">
+    <section className="w-full text-neutral-600 dark:text-light sm:transition-all">
       <div className="grid grid-cols-4 gap-2.5">
         {skillsList.map((x) => {
           return (
@@ -96,9 +96,9 @@ const Skills = () => {
               <button
                 className={`${
                   x.color
-                } relative focus:shadow-none z-20 aspect-square h-[105px] w-full cursor-pointer rounded-[4px] bg-white bg-opacity-30 p-5 sm:transition-all hover:bg-opacity-100 hover:shadow-lg dark:border-bgDark dark:bg-bgDark dark:shadow-none dark:hover:text-rose-400 sm:p-10  ${
+                } relative z-20 aspect-square h-[105px] w-full cursor-pointer rounded-[4px] bg-white bg-opacity-30 p-5 hover:bg-opacity-100 focus:shadow-none dark:border-bgDark dark:bg-bgDark dark:shadow-none dark:hover:text-rose-400 sm:p-10 sm:transition-all sm:hover:shadow-lg  ${
                   x.darkText
-                    ? "text-neutral-700 sm:transition-all hover:text-black dark:text-light "
+                    ? "text-neutral-700 hover:text-black dark:text-light sm:transition-all "
                     : "text-neutral-700 hover:text-white dark:text-light "
                 } flex w-full flex-col items-center justify-center gap-2.5 p-2.5 sm:transition-all md:aspect-square`}
               >

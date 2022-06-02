@@ -10,20 +10,20 @@ const Hero = () => {
     bottom.scrollIntoView({ behavior: "smooth" });
   };
   return (
-    <header className="relative flex h-[calc(100vh-56px)] w-full items-center border-b px-2.5 sm:transition-all dark:border-borderDark sm:px-5 md:py-40 lg:py-60">
+    <header className="relative flex min-h-[calc(100vh-56px)] mt-20 sm:mt-0 w-full items-center border-b px-2.5 dark:border-borderDark sm:px-5 sm:transition-all md:py-40 lg:py-60">
       <section className="mx-auto mb-[56px] flex max-w-screen-lg flex-col items-center md:gap-5 lg:flex-row lg:gap-10">
-        <div className="w-full md:w-7/12">
+        <div className="w-full">
           <h2
             data-aos="fade"
             data-aos-delay="400"
-            className="heading text-center text-4xl font-bold tracking-tight sm:transition-all md:text-5xl lg:text-left lg:text-6xl"
+            className="heading text-center text-4xl font-bold tracking-tight sm:transition-all md:text-5xl lg:text-left lg:text-6xl whitespace-nowrap mx-auto flex justify-center lg:justify-start w-full"
           >
             Nice to meet you,
           </h2>
           <h2
             data-aos="fade"
             data-aos-delay="500"
-            className="heading text-center text-4xl font-bold tracking-tight text-rose-600 sm:transition-all dark:text-rose-400 md:text-5xl lg:text-left lg:text-6xl"
+            className="heading text-center text-4xl font-bold tracking-tight text-rose-600 dark:text-rose-400 sm:transition-all md:text-5xl lg:text-left lg:text-6xl"
           >
             I'm Logan
           </h2>
@@ -43,7 +43,7 @@ const Hero = () => {
           >
             <button
               onClick={scrollToBottom}
-              className="rounded-md bg-rose-600 px-3.5 py-2 font-medium text-white sm:transition-all hover:shadow-md active:shadow-none dark:bg-rose-400 dark:text-bgDarkest sm:active:scale-95 "
+              className="rounded-md bg-rose-600 px-3.5 py-2 font-medium text-white active:shadow-none dark:bg-rose-400 dark:text-bgDarkest sm:transition-all sm:hover:shadow-md sm:active:scale-95 "
             >
               Contact
             </button>
@@ -51,7 +51,7 @@ const Hero = () => {
               href={resume}
               target="_blank"
               rel="noreferrer"
-              className="rounded-md bg-gray-200 px-3.5 py-2 sm:transition-all hover:shadow-md active:shadow-none dark:bg-bgDark sm:active:scale-95"
+              className="rounded-md bg-gray-200 px-3.5 py-2 active:shadow-none dark:bg-bgDark sm:transition-all sm:hover:shadow-md sm:active:scale-95"
             >
               Resume
             </a>
