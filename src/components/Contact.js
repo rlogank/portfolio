@@ -97,8 +97,7 @@ const Form = () => {
               data-aos="fade"
               className="mt-2.5 max-w-[535px] text-center sm:text-center md:text-left lg:mt-5"
             >
-              I am looking for a full-time salaried web development position and
-              doing freelance in the meantime. I am open to all kinds of web-dev
+              I am looking to bring my A-game to a full-time salaried web development position. Doing freelance in the meantime. I am open to all kinds of web-dev
               work and even collaboration.
             </p>
           </header>

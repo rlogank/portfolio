@@ -34,7 +34,7 @@ const Hero = () => {
           >
             Thank you for visiting my site. I am a frontend web-developer that
             uses tools like React and Tailwind to construct concise, functional
-            web applications. I am currently looking for a job.
+            web applications.
           </p>
           <nav
             data-aos="fade"
