@@ -185,8 +185,8 @@ const Form = () => {
                     }}
                     className={
                       !valid
-                        ? "ml-auto flex cursor-not-allowed items-center justify-center self-start rounded-[4px] bg-rose-600 px-3.5 py-2 text-sm font-medium text-white dark:bg-bgDark dark:text-gray-300 sm:transition"
-                        : "!-100 ml-auto flex items-center justify-center self-start rounded-[4px] bg-rose-600 px-3.5 py-2 text-sm font-medium text-white outline outline-transparent focus:shadow-none dark:bg-rose-400 dark:text-bgDarkest sm:transition sm:hover:shadow-md sm:active:scale-95"
+                        ? "ml-auto flex cursor-not-allowed items-center justify-center self-start rounded-[4px] bg-rose-600 px-3.5 py-2 text-sm font-medium text-white dark:bg-bgDark dark:text-gray-300 sm:transition sm:active:shadow-none"
+                        : "!-100 ml-auto flex items-center justify-center self-start rounded-[4px] bg-rose-600 px-3.5 py-2 text-sm font-medium text-white outline outline-transparent focus:shadow-none dark:bg-rose-400 dark:text-bgDarkest sm:transition sm:hover:shadow-md sm:active:scale-95 sm:active:shadow-none"
                     }
                   >
                     {submitText ? (

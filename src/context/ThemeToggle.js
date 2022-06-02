@@ -10,7 +10,7 @@ const Toggle = () => {
       {theme === "dark" ? (
         <button
           onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-          className="flex h-[36px] items-center justify-center gap-1.5 rounded-md bg-gray-100 p-2.5 text-xs font-medium text-neutral-600 active:shadow-none dark:bg-bgDarker dark:text-light sm:transition-all sm:hover:shadow-md sm:active:scale-95"
+          className="flex h-[36px] items-center justify-center gap-1.5 rounded-md bg-gray-100 p-2.5 text-xs font-medium text-neutral-600 active:shadow-none dark:bg-bgDarker dark:text-light sm:transition-all sm:hover:shadow-md sm:active:scale-95 sm:active:shadow-none"
         >
           <FaSun />
           <span className="hidden whitespace-nowrap sm:block">Light mode</span>
@@ -18,7 +18,7 @@ const Toggle = () => {
       ) : (
         <button
           onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-          className="flex h-[36px] items-center justify-center gap-1.5 rounded-md bg-gray-100 p-2.5 text-xs font-medium text-neutral-600 active:shadow-none dark:bg-bgDarker dark:text-light sm:transition-all sm:hover:shadow-md sm:active:scale-95"
+          className="flex h-[36px] items-center justify-center gap-1.5 rounded-md bg-gray-100 p-2.5 text-xs font-medium text-neutral-600 active:shadow-none dark:bg-bgDarker dark:text-light sm:transition-all sm:hover:shadow-md sm:active:scale-95 sm:active:shadow-none"
         >
           <FaMoon className="text-[0.75rem]" />{" "}
           <span className="hidden whitespace-nowrap sm:block">Dark mode</span>

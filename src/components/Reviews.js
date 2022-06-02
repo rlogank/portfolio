@@ -5,7 +5,7 @@ const Reviews = () => {
     {
       body: `I hired Logan to give my website a "facelift." He came back with a beautiful and clean fully new design that looked better than all of the other 10 designs that I was evaluating at the time. And he implemented it in a day. Logan's skills are impressive, and I would highly recommend him!`,
       name: "Michael K.",
-      details: "Web Developer, Private Client",
+      details: "Web Developer, Hollowverse.com",
     },
     {
       body: `Logan was very helpful, patient and tried every route to fix my
@@ -46,7 +46,7 @@ const Reviews = () => {
         {reviewData.map((r) => {
           return (
             <article data-aos="fade">
-              <button className="mx-auto flex w-full max-w-screen-sm cursor-pointer select-none rounded-[4px] border-l-4 border-rose-600 bg-white p-5 shadow-md active:shadow-none dark:border-rose-400 dark:bg-bgDark sm:transition-all sm:hover:shadow-lg sm:active:scale-95">
+              <button className="mx-auto flex w-full max-w-screen-sm cursor-pointer select-none rounded-[4px] border-l-4 border-rose-600 bg-white p-5 shadow-md active:shadow-none dark:border-rose-400 dark:bg-bgDark sm:transition-all sm:hover:shadow-lg sm:active:scale-95 sm:active:shadow-none">
                 <div className="flex flex-col justify-center gap-2.5">
                   <div className="flex justify-between">
                     <div className="w-full">

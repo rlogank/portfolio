@@ -65,7 +65,7 @@ const Projects = () => {
                   target="_blank"
                   rel="noreferrer"
                   key={i}
-                  className="flex min-h-[138px] cursor-pointer select-none flex-col justify-between rounded-[4px] border-t-4 border-rose-600 bg-white bg-opacity-70 shadow-md active:shadow-none dark:border-bgDark dark:bg-bgDarker dark:bg-opacity-100 sm:transition-all sm:hover:shadow-lg sm:active:scale-95"
+                  className="flex min-h-[138px] cursor-pointer select-none flex-col justify-between rounded-[4px] border-t-4 border-rose-600 bg-white bg-opacity-70 shadow-md active:shadow-none dark:border-bgDark dark:bg-bgDarker dark:bg-opacity-100 sm:transition-all sm:hover:shadow-lg sm:active:scale-95 sm:active:shadow-none"
                 >
                   <div className="flex flex-col gap-1 p-5">
                     <div className="flex items-center justify-between">

@@ -10,7 +10,7 @@ const Hero = () => {
     bottom.scrollIntoView({ behavior: "smooth" });
   };
   return (
-    <header className="relative flex min-h-[calc(100vh-56px)] mt-20 sm:mt-0 w-full items-center border-b px-2.5 dark:border-borderDark sm:px-5 sm:transition-all md:py-40 lg:py-60">
+    <header className="relative flex min-h-[calc(100vh-56px)] w-full items-center border-b px-2.5 dark:border-borderDark sm:px-5 sm:transition-all md:py-40 lg:py-60">
       <section className="mx-auto mb-[56px] flex max-w-screen-lg flex-col items-center md:gap-5 lg:flex-row lg:gap-10">
         <div className="w-full">
           <h2
@@ -43,7 +43,7 @@ const Hero = () => {
           >
             <button
               onClick={scrollToBottom}
-              className="rounded-md bg-rose-600 px-3.5 py-2 font-medium text-white active:shadow-none dark:bg-rose-400 dark:text-bgDarkest sm:transition-all sm:hover:shadow-md sm:active:scale-95 "
+              className="rounded-md bg-rose-600 px-3.5 py-2 font-medium text-white active:shadow-none dark:bg-rose-400 dark:text-bgDarkest sm:transition-all sm:hover:shadow-md sm:active:scale-95 sm:active:shadow-none"
             >
               Contact
             </button>
@@ -51,7 +51,7 @@ const Hero = () => {
               href={resume}
               target="_blank"
               rel="noreferrer"
-              className="rounded-md bg-gray-200 px-3.5 py-2 active:shadow-none dark:bg-bgDark sm:transition-all sm:hover:shadow-md sm:active:scale-95"
+              className="rounded-md bg-gray-200 px-3.5 py-2 active:shadow-none dark:bg-bgDark sm:transition-all sm:hover:shadow-md sm:active:scale-95 sm:active:shadow-none"
             >
               Resume
             </a>
