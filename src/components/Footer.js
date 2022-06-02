@@ -33,7 +33,7 @@ const Footer = () => {
                 href="https://rlogank.com/chat"
                 rel="noreferrer"
                 target="_blank"
-                className="inline-flex items-start justify-start self-start transition-all hover:text-rose-600 dark:hover:text-rose-400"
+                className="inline-flex items-start justify-start self-start sm:transition-all hover:text-rose-600 dark:hover:text-rose-400"
               >
                 Chat
               </a>
@@ -41,7 +41,7 @@ const Footer = () => {
                 href="https://rlogank.com/site-builder"
                 rel="noreferrer"
                 target="_blank"
-                className="inline-flex items-start justify-start self-start transition-all hover:text-rose-600 dark:hover:text-rose-400"
+                className="inline-flex items-start justify-start self-start sm:transition-all hover:text-rose-600 dark:hover:text-rose-400"
               >
                 Site Builder
               </a>
@@ -49,7 +49,7 @@ const Footer = () => {
                 href="https://rlogank.com/social-media"
                 rel="noreferrer"
                 target="_blank"
-                className="inline-flex items-start justify-start self-start transition-all hover:text-rose-600 dark:hover:text-rose-400"
+                className="inline-flex items-start justify-start self-start sm:transition-all hover:text-rose-600 dark:hover:text-rose-400"
               >
                 Social Media
               </a>
@@ -57,7 +57,7 @@ const Footer = () => {
                 href="https://rlogank.com/online-store"
                 rel="noreferrer"
                 target="_blank"
-                className="inline-flex items-start justify-start self-start transition-all hover:text-rose-600 dark:hover:text-rose-400"
+                className="inline-flex items-start justify-start self-start sm:transition-all hover:text-rose-600 dark:hover:text-rose-400"
               >
                 Online Store
               </a>
@@ -65,7 +65,7 @@ const Footer = () => {
                 href="https://hollowverse.com/"
                 rel="noreferrer"
                 target="_blank"
-                className="inline-flex items-start justify-start self-start transition-all hover:text-rose-600 dark:hover:text-rose-400"
+                className="inline-flex items-start justify-start self-start sm:transition-all hover:text-rose-600 dark:hover:text-rose-400"
               >
                 Hollowverse
               </a>
@@ -73,7 +73,7 @@ const Footer = () => {
                 href="https://rlogank.com/crypto-exchange"
                 rel="noreferrer"
                 target="_blank"
-                className="inline-flex items-start justify-start self-start transition-all hover:text-rose-600 dark:hover:text-rose-400"
+                className="inline-flex items-start justify-start self-start sm:transition-all hover:text-rose-600 dark:hover:text-rose-400"
               >
                 Crypto Exchange
               </a>
@@ -86,7 +86,7 @@ const Footer = () => {
                 href="https://github.com/rlogank"
                 rel="noreferrer"
                 target="_blank"
-                className="inline-flex items-start justify-start self-start transition-all hover:text-rose-600 dark:hover:text-rose-400"
+                className="inline-flex items-start justify-start self-start sm:transition-all hover:text-rose-600 dark:hover:text-rose-400"
               >
                 GitHub
               </a>
@@ -94,7 +94,7 @@ const Footer = () => {
                 href="https://www.linkedin.com/in/rlogank/"
                 rel="noreferrer"
                 target="_blank"
-                className="inline-flex items-start justify-start self-start transition-all hover:text-rose-600 dark:hover:text-rose-400"
+                className="inline-flex items-start justify-start self-start sm:transition-all hover:text-rose-600 dark:hover:text-rose-400"
               >
                 LinkedIn
               </a>
@@ -102,7 +102,7 @@ const Footer = () => {
                 href="https://twitter.com/rlogank"
                 rel="noreferrer"
                 target="_blank"
-                className="inline-flex items-start justify-start self-start transition-all hover:text-rose-600 dark:hover:text-rose-400"
+                className="inline-flex items-start justify-start self-start sm:transition-all hover:text-rose-600 dark:hover:text-rose-400"
               >
                 Twitter
               </a>
@@ -110,7 +110,7 @@ const Footer = () => {
                 href="https://www.fiverr.com/logansservices"
                 rel="noreferrer"
                 target="_blank"
-                className="inline-flex items-start justify-start self-start transition-all hover:text-rose-600 dark:hover:text-rose-400"
+                className="inline-flex items-start justify-start self-start sm:transition-all hover:text-rose-600 dark:hover:text-rose-400"
               >
                 Fiverr
               </a>
@@ -118,7 +118,7 @@ const Footer = () => {
                 href="https://www.upwork.com/freelancers/~01088dae6645688131"
                 rel="noreferrer"
                 target="_blank"
-                className="inline-flex items-start justify-start self-start transition-all hover:text-rose-600 dark:hover:text-rose-400"
+                className="inline-flex items-start justify-start self-start sm:transition-all hover:text-rose-600 dark:hover:text-rose-400"
               >
                 Upwork
               </a>
@@ -130,7 +130,7 @@ const Footer = () => {
               <div
                 rel="noreferrer"
                 target="_blank"
-                className="inline-flex cursor-pointer select-none flex-nowrap items-center justify-start gap-1.5 self-start whitespace-nowrap transition-all hover:text-rose-600 dark:hover:text-rose-400"
+                className="inline-flex cursor-pointer select-none flex-nowrap items-center justify-start gap-1.5 self-start whitespace-nowrap sm:transition-all hover:text-rose-600 dark:hover:text-rose-400"
               >
                 <FaLocationArrow className="text-xs" />
                 Florida, Eastern Timezone
@@ -139,7 +139,7 @@ const Footer = () => {
                 href="mailto:rlogank@icloud.com"
                 rel="noreferrer"
                 target="_blank"
-                className="inline-flex flex-nowrap items-center justify-start gap-1.5 self-start whitespace-nowrap transition-all hover:text-rose-600 dark:hover:text-rose-400"
+                className="inline-flex flex-nowrap items-center justify-start gap-1.5 self-start whitespace-nowrap sm:transition-all hover:text-rose-600 dark:hover:text-rose-400"
               >
                 <FaEnvelope className="text-xs" />
                 rlogank@icloud.com
@@ -148,7 +148,7 @@ const Footer = () => {
                 href={resume}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex flex-nowrap items-center justify-start gap-1.5 self-start whitespace-nowrap transition-all hover:text-rose-600 dark:hover:text-rose-400"
+                className="inline-flex flex-nowrap items-center justify-start gap-1.5 self-start whitespace-nowrap sm:transition-all hover:text-rose-600 dark:hover:text-rose-400"
               >
                 <FaPaperclip className="text-xs" />
                 Resume

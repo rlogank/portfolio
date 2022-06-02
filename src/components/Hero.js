@@ -10,20 +10,20 @@ const Hero = () => {
     bottom.scrollIntoView({ behavior: "smooth" });
   };
   return (
-    <header className="relative flex h-[calc(100vh-56px)] w-full items-center border-b px-2.5 transition-all dark:border-borderDark sm:px-5 md:py-40 lg:py-60">
+    <header className="relative flex h-[calc(100vh-56px)] w-full items-center border-b px-2.5 sm:transition-all dark:border-borderDark sm:px-5 md:py-40 lg:py-60">
       <section className="mx-auto mb-[56px] flex max-w-screen-lg flex-col items-center md:gap-5 lg:flex-row lg:gap-10">
         <div className="w-full md:w-7/12">
           <h2
             data-aos="fade"
             data-aos-delay="400"
-            className="heading text-center text-4xl font-bold tracking-tight transition-all md:text-5xl lg:text-left lg:text-6xl"
+            className="heading text-center text-4xl font-bold tracking-tight sm:transition-all md:text-5xl lg:text-left lg:text-6xl"
           >
             Nice to meet you,
           </h2>
           <h2
             data-aos="fade"
             data-aos-delay="500"
-            className="heading text-center text-4xl font-bold tracking-tight text-rose-600 transition-all dark:text-rose-400 md:text-5xl lg:text-left lg:text-6xl"
+            className="heading text-center text-4xl font-bold tracking-tight text-rose-600 sm:transition-all dark:text-rose-400 md:text-5xl lg:text-left lg:text-6xl"
           >
             I'm Logan
           </h2>
@@ -43,7 +43,7 @@ const Hero = () => {
           >
             <button
               onClick={scrollToBottom}
-              className="rounded-md bg-rose-600 px-3.5 py-2 font-medium text-white transition-all hover:shadow-md active:shadow-none dark:bg-rose-400 dark:text-bgDarkest active:scale-95 "
+              className="rounded-md bg-rose-600 px-3.5 py-2 font-medium text-white sm:transition-all hover:shadow-md active:shadow-none dark:bg-rose-400 dark:text-bgDarkest sm:active:scale-95 "
             >
               Contact
             </button>
@@ -51,7 +51,7 @@ const Hero = () => {
               href={resume}
               target="_blank"
               rel="noreferrer"
-              className="rounded-md bg-gray-200 px-3.5 py-2 transition-all hover:shadow-md active:shadow-none dark:bg-bgDark active:scale-95"
+              className="rounded-md bg-gray-200 px-3.5 py-2 sm:transition-all hover:shadow-md active:shadow-none dark:bg-bgDark sm:active:scale-95"
             >
               Resume
             </a>

@@ -83,13 +83,13 @@ const Form = () => {
           <header>
             <h3
               data-aos="fade"
-              className="heading text-center text-4xl font-bold tracking-tight transition-all sm:text-center md:text-left md:text-4xl lg:text-5xl"
+              className="heading text-center text-4xl font-bold tracking-tight sm:transition-all sm:text-center md:text-left md:text-4xl lg:text-5xl"
             >
               Let's work together,
             </h3>
             <h3
               data-aos="fade"
-              className="heading text-center text-4xl font-bold tracking-tight text-rose-600 transition-all dark:text-rose-400 sm:text-center md:text-left md:text-4xl lg:text-5xl"
+              className="heading text-center text-4xl font-bold tracking-tight text-rose-600 sm:transition-all dark:text-rose-400 sm:text-center md:text-left md:text-4xl lg:text-5xl"
             >
               contact me
             </h3>
@@ -127,7 +127,7 @@ const Form = () => {
                       required
                       title="Name"
                       placeholder="Name"
-                      className="flex w-1/2 cursor-pointer self-center rounded-[4px] py-2 px-3.5 outline outline-transparent transition-all hover:bg-opacity-20  focus:cursor-text focus:bg-opacity-25 focus:outline-rose-600 dark:bg-bgDark dark:focus:outline-rose-400"
+                      className="flex w-1/2 cursor-pointer self-center rounded-[4px] py-2 px-3.5 outline outline-transparent sm:transition-all hover:bg-opacity-20  focus:cursor-text focus:bg-opacity-25 focus:outline-rose-600 dark:bg-bgDark dark:focus:outline-rose-400"
                     />
                     <input
                       onChange={(e) => setEmail(e.target.value)}
@@ -138,7 +138,7 @@ const Form = () => {
                       id="email"
                       required
                       placeholder="Email"
-                      className="flex w-1/2 cursor-pointer self-center rounded-[4px] py-2 px-3.5 outline outline-transparent transition-all hover:bg-opacity-20  focus:cursor-text focus:bg-opacity-25 focus:outline-rose-600 dark:bg-bgDark dark:focus:outline-rose-400"
+                      className="flex w-1/2 cursor-pointer self-center rounded-[4px] py-2 px-3.5 outline outline-transparent sm:transition-all hover:bg-opacity-20  focus:cursor-text focus:bg-opacity-25 focus:outline-rose-600 dark:bg-bgDark dark:focus:outline-rose-400"
                     />
                   </div>
                   <textarea
@@ -151,7 +151,7 @@ const Form = () => {
                     autoComplete="message"
                     required
                     placeholder="Message"
-                    className="flex w-full cursor-pointer resize-none self-center rounded-[4px] py-2 px-3.5 outline outline-transparent transition-all hover:bg-opacity-20  focus:cursor-text focus:bg-opacity-25 focus:outline-rose-600 dark:bg-bgDark dark:focus:outline-rose-400"
+                    className="flex w-full cursor-pointer resize-none self-center rounded-[4px] py-2 px-3.5 outline outline-transparent sm:transition-all hover:bg-opacity-20  focus:cursor-text focus:bg-opacity-25 focus:outline-rose-600 dark:bg-bgDark dark:focus:outline-rose-400"
                   />
                 </div>
                 <div className="flex pt-2.5 text-xs font-normal md:pt-5">
@@ -184,8 +184,8 @@ const Form = () => {
                     }}
                     className={
                       !valid
-                        ? "ml-auto flex cursor-not-allowed items-center justify-center self-start rounded-[4px] bg-rose-600 px-3.5 py-2 text-sm font-medium text-white transition dark:bg-bgDark dark:text-gray-300"
-                        : "!-100 ml-auto flex items-center justify-center self-start rounded-[4px] bg-rose-600 px-3.5 py-2 text-sm font-medium text-white outline outline-transparent transition hover:shadow-md focus:shadow-none active:scale-95 dark:bg-rose-400 dark:text-bgDarkest"
+                        ? "ml-auto flex cursor-not-allowed items-center justify-center self-start rounded-[4px] bg-rose-600 px-3.5 py-2 text-sm font-medium text-white sm:transition dark:bg-bgDark dark:text-gray-300"
+                        : "!-100 ml-auto flex items-center justify-center self-start rounded-[4px] bg-rose-600 px-3.5 py-2 text-sm font-medium text-white outline outline-transparent sm:transition hover:shadow-md focus:shadow-none sm:active:scale-95 dark:bg-rose-400 dark:text-bgDarkest"
                     }
                   >
                     {submitText ? (
