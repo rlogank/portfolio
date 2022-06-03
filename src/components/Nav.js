@@ -95,7 +95,7 @@ const Nav = () => {
           <button
             onClick={scrollToBottom}
             className="flex h-[36px] items-center justify-center gap-1.5 rounded-md bg-rose-600 p-2.5 text-xs 
-          font-medium text-white sm:active:shadow-none dark:bg-bgDarker dark:text-light sm:transition-all sm:hover:shadow-md"
+          font-medium text-white dark:bg-bgDarker dark:text-light sm:transition-all sm:hover:shadow-md sm:active:shadow-none"
           >
             <FaEnvelope /> <span className="hidden sm:block">Contact</span>
           </button>

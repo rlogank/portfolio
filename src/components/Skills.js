@@ -93,14 +93,8 @@ const Skills = () => {
         {skillsList.map((x) => {
           return (
             <>
-              <button
-                className={`${
-                  x.color
-                } relative z-20 aspect-square sm:h-[105px] sm:w-[105px] rounded-[4px] bg-white bg-opacity-30 p-5 hover:bg-opacity-100 dark:border-bgDark dark:bg-bgDark dark:shadow-none dark:hover:text-rose-400 sm:p-10 sm:transition-all sm:hover:shadow-lg sm:focus:shadow-none ${
-                  x.darkText
-                    ? "text-neutral-700 hover:text-black dark:text-light sm:transition-all "
-                    : "text-neutral-700 hover:text-white dark:text-light "
-                } flex w-full flex-col items-center justify-center gap-2.5 p-2.5 sm:transition-all md:aspect-square`}
+              <div
+                className={`${x.color} relative z-20 flex aspect-square w-full flex-col items-center justify-center gap-2.5 rounded-[4px] bg-white bg-opacity-30 p-5 p-2.5 dark:border-bgDark dark:bg-bgDark dark:shadow-none dark:hover:text-rose-400 sm:h-[105px] sm:w-[105px] sm:p-10 sm:transition-all md:aspect-square`}
               >
                 <span
                   className={`heading select-none text-2xl font-bold tracking-tight sm:transition-all md:text-3xl lg:text-4xl`}
@@ -110,7 +104,7 @@ const Skills = () => {
                 <h3 className="heading select-none text-center text-[0.7rem] tracking-tight">
                   {x.name}
                 </h3>
-              </button>
+              </div>
             </>
           );
         })}

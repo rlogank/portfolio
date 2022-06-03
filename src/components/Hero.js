@@ -16,7 +16,7 @@ const Hero = () => {
           <h2
             data-aos="fade"
             data-aos-delay="400"
-            className="heading text-center text-4xl font-bold tracking-tight sm:transition-all md:text-5xl lg:text-left lg:text-6xl whitespace-nowrap mx-auto flex justify-center lg:justify-start w-full"
+            className="heading mx-auto flex w-full justify-center whitespace-nowrap text-center text-4xl font-bold tracking-tight sm:transition-all md:text-5xl lg:justify-start lg:text-left lg:text-6xl"
           >
             Nice to meet you,
           </h2>

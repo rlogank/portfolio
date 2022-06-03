@@ -46,7 +46,7 @@ const Reviews = () => {
         {reviewData.map((r) => {
           return (
             <article data-aos="fade">
-              <button className="mx-auto flex w-full max-w-screen-sm cursor-pointer select-none rounded-[4px] border-l-4 border-rose-600 bg-white p-5 shadow-md active:shadow-none dark:border-rose-400 dark:bg-bgDark sm:transition-all sm:hover:shadow-lg sm:active:scale-95 sm:active:shadow-none">
+              <div className="mx-auto flex w-full max-w-screen-sm rounded-[4px] border-l-4 border-rose-600 bg-white p-5 shadow-lg dark:border-rose-400 dark:bg-bgDark">
                 <div className="flex flex-col justify-center gap-2.5">
                   <div className="flex justify-between">
                     <div className="w-full">
@@ -67,7 +67,7 @@ const Reviews = () => {
                   </div>
                   <p className="text-left text-sm">{r.body}</p>
                 </div>
-              </button>
+              </div>
             </article>
           );
         })}
