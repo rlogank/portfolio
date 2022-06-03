@@ -29,14 +29,6 @@ const Footer = () => {
             <h4 className="mb-2.5 font-semibold">Work</h4>
             <div className="flex flex-col items-start gap-2.5 text-sm text-gray-600 dark:text-gray-300">
               <a
-                href="https://rlogank.com/chat"
-                rel="noreferrer"
-                target="_blank"
-                className="inline-flex items-start justify-start self-start hover:text-rose-600 dark:hover:text-rose-400 sm:transition-all"
-              >
-                Chat
-              </a>
-              <a
                 href="https://rlogank.com/site-builder"
                 rel="noreferrer"
                 target="_blank"
@@ -45,20 +37,20 @@ const Footer = () => {
                 Site Builder
               </a>
               <a
-                href="https://rlogank.com/social-media"
+                href="https://rlogank.com/burbl"
                 rel="noreferrer"
                 target="_blank"
                 className="inline-flex items-start justify-start self-start hover:text-rose-600 dark:hover:text-rose-400 sm:transition-all"
               >
-                Social Media
+                Burbl
               </a>
               <a
-                href="https://rlogank.com/online-store"
+                href="https://rlogank.com/pern"
                 rel="noreferrer"
                 target="_blank"
                 className="inline-flex items-start justify-start self-start hover:text-rose-600 dark:hover:text-rose-400 sm:transition-all"
               >
-                Online Store
+                PERN Post
               </a>
               <a
                 href="https://hollowverse.com/"
@@ -68,14 +60,7 @@ const Footer = () => {
               >
                 Hollowverse
               </a>
-              <a
-                href="https://rlogank.com/crypto-exchange"
-                rel="noreferrer"
-                target="_blank"
-                className="inline-flex items-start justify-start self-start hover:text-rose-600 dark:hover:text-rose-400 sm:transition-all"
-              >
-                Crypto Exchange
-              </a>
+
             </div>
           </section>
           <section data-aos="fade" data-aos-delay="200">

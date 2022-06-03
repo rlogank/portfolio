@@ -5,6 +5,7 @@ import Toggle from "../context/ThemeToggle";
 import { SiCoderwall } from "react-icons/si";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 AOS.init();
 
 const Nav = () => {
@@ -54,7 +55,7 @@ const Nav = () => {
           className="heading flex w-2/6 items-center gap-1.5 text-lg font-semibold text-neutral-600 dark:text-light sm:transition-all"
         >
           <SiCoderwall className="rotate-90 text-xs text-rose-600 dark:text-rose-400" />
-          <a href="https://rlogank.com/">rlogank</a>
+          <Link to="/">rlogank</Link>
         </h1>
         <div
           data-aos="fade"
