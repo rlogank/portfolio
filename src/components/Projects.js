@@ -43,7 +43,7 @@ const Projects = () => {
         </h3>
         <h3
           data-aos="fade"
-          className="heading text-center text-4xl font-bold tracking-tight text-rose-600 dark:text-rose-400 sm:transition-all md:text-left md:text-4xl lg:text-5xl"
+          className="heading text-center text-4xl font-bold tracking-tight text-blue-600 dark:text-blue-400 sm:transition-all md:text-left md:text-4xl lg:text-5xl"
         >
           current projects
         </h3>
@@ -65,7 +65,7 @@ const Projects = () => {
                   target="_blank"
                   rel="noreferrer"
                   key={i}
-                  className="flex min-h-[138px] cursor-pointer select-none flex-col justify-between rounded-[4px] border-t-4 border-rose-600 bg-white bg-opacity-70 shadow-md active:shadow-none dark:border-bgDark dark:bg-bgDarker dark:bg-opacity-100 sm:transition-all sm:hover:shadow-lg sm:active:scale-95 sm:active:shadow-none"
+                  className="flex min-h-[138px] cursor-pointer select-none flex-col justify-between rounded-[4px] border-t-4 border-blue-600 bg-white bg-opacity-70 shadow-md active:shadow-none dark:border-blue-400 dark:bg-bgDarker dark:bg-opacity-100 sm:transition-all sm:hover:shadow-lg sm:active:scale-95 sm:active:shadow-none"
                 >
                   <div className="flex flex-col gap-1 p-5">
                     <div className="flex items-center justify-between">
@@ -75,7 +75,7 @@ const Projects = () => {
                           {x.type}
                         </h5>
                       </div>
-                      <p className="flex items-center gap-1 text-sm font-medium text-rose-600 dark:text-rose-400 sm:transition-all">
+                      <p className="flex items-center gap-1 text-sm font-medium text-blue-600 dark:text-blue-400 sm:transition-all">
                         Visit <FaChevronRight className="text-xs" />
                       </p>
                     </div>
@@ -85,7 +85,7 @@ const Projects = () => {
                   </div>
                   {/* <div>{x.type}</div> */}
                   <div className="flex items-center justify-between gap-2.5 px-5 pb-5 text-[0.75rem] dark:text-gray-200 sm:transition-all">
-                    <span className="hidden text-base text-neutral-400 hover:text-rose-600 dark:hover:text-rose-400 sm:block sm:transition-all">
+                    <span className="hidden text-base text-neutral-400 hover:text-blue-600 dark:hover:text-blue-400 sm:block sm:transition-all">
                       <FaGithub />
                     </span>
                     <div className="flex gap-2.5 text-[0.67rem] xs:text-[0.75rem]">

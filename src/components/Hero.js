@@ -10,8 +10,8 @@ const Hero = () => {
     bottom.scrollIntoView({ behavior: "smooth" });
   };
   return (
-    <header className="relative flex min-h-[calc(100vh-56px)] w-full items-center border-b px-2.5 dark:border-borderDark sm:px-5 sm:transition-all md:py-40 lg:py-60">
-      <section className="mx-auto mb-[56px] flex max-w-screen-lg flex-col items-center md:gap-5 lg:flex-row lg:gap-10">
+    <header className="flex min-h-[calc(100vh-112px)] w-full lg:items-center border-b px-5 dark:border-borderDark sm:px-5 sm:transition-all py-20">
+      <section className="mx-auto mb-[56px] flex max-w-screen-lg flex-col items-center justify-center md:gap-5 lg:flex-row lg:gap-10">
         <div className="w-full">
           <h2
             data-aos="fade"
@@ -23,7 +23,7 @@ const Hero = () => {
           <h2
             data-aos="fade"
             data-aos-delay="500"
-            className="heading text-center text-4xl font-bold tracking-tight text-rose-600 dark:text-rose-400 sm:transition-all md:text-5xl lg:text-left lg:text-6xl"
+            className="heading text-center text-4xl font-bold tracking-tight ts text-blue-600 dark:text-blue-400 sm:transition-all md:text-5xl lg:text-left lg:text-6xl"
           >
             I'm Logan
           </h2>
@@ -43,7 +43,7 @@ const Hero = () => {
           >
             <button
               onClick={scrollToBottom}
-              className="rounded-md bg-rose-600 px-3.5 py-2 font-medium text-white active:shadow-none dark:bg-rose-400 dark:text-bgDarkest sm:transition-all sm:hover:shadow-md sm:active:scale-95 sm:active:shadow-none"
+              className="rounded-md bg-blue-600 px-3.5 py-2 font-medium text-white active:shadow-none dark:bg-blue-400 dark:text-bgDarkest sm:transition-all sm:hover:shadow-md sm:active:scale-95 sm:active:shadow-none"
             >
               Contact
             </button>
@@ -60,7 +60,7 @@ const Hero = () => {
         <section
           data-aos="fade"
           data-aos-delay="800"
-          className="mx-auto mr-auto flex w-full max-w-[450px] justify-center self-center pt-20 md:self-start md:pt-10 lg:pt-2.5"
+          className="mx-auto mr-auto flex w-full max-w-[450px] mt-20 md:mt-0 justify-center self-center md:self-start md:pt-2.5"
         >
           <Skills />
         </section>

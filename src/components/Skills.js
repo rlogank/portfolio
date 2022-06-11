@@ -94,7 +94,7 @@ const Skills = () => {
           return (
             <>
               <div
-                className={`${x.color} relative z-20 flex aspect-square w-full flex-col items-center justify-center gap-2.5 rounded-[4px] bg-white bg-opacity-30 p-5 p-2.5 dark:border-bgDark dark:bg-bgDark dark:shadow-none dark:hover:text-rose-400 sm:h-[105px] sm:w-[105px] sm:p-10 sm:transition-all md:aspect-square`}
+                className={`${x.color} relative z-20 flex aspect-square w-full flex-col items-center justify-center gap-2.5 rounded-[4px] bg-white bg-opacity-30 p-5 p-2.5 dark:border-bgDark dark:bg-bgDark dark:shadow-none dark:hover:text-blue-400 sm:h-[105px] sm:w-[105px] sm:p-10 sm:transition-all md:aspect-square`}
               >
                 <span
                   className={`heading select-none text-2xl font-bold tracking-tight sm:transition-all md:text-3xl lg:text-4xl`}

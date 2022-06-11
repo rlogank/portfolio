@@ -33,7 +33,7 @@ const Reviews = () => {
         </h3>
         <h3
           data-aos="fade"
-          className="heading text-center text-4xl font-bold tracking-tight text-rose-600 dark:text-rose-400 sm:transition-all md:text-4xl lg:text-5xl"
+          className="heading text-center text-4xl font-bold tracking-tight text-blue-600 dark:text-blue-400 sm:transition-all md:text-4xl lg:text-5xl"
         >
           about my work
         </h3>
@@ -46,13 +46,13 @@ const Reviews = () => {
         {reviewData.map((r) => {
           return (
             <article data-aos="fade">
-              <div className="mx-auto flex w-full max-w-screen-sm rounded-[4px] border-l-4 border-rose-600 bg-white p-5 shadow-lg dark:border-rose-400 dark:bg-bgDark">
+              <div className="mx-auto flex w-full max-w-screen-sm rounded-[4px] border-l-4 border-blue-600 bg-white p-5 shadow-lg dark:border-blue-400 dark:bg-bgDark">
                 <div className="flex flex-col justify-center gap-2.5">
                   <div className="flex justify-between">
                     <div className="w-full">
                       <div className="flex items-center justify-between">
                         <h4 className="font-medium">{r.name}</h4>
-                        <div className="ml-auto flex gap-1 self-center text-rose-600 dark:text-rose-400">
+                        <div className="ml-auto flex gap-1 self-center text-blue-600 dark:text-blue-400">
                           <FaStar />
                           <FaStar />
                           <FaStar />

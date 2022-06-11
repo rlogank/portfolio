@@ -54,9 +54,9 @@ const Nav = () => {
           data-aos-delay="100"
           className="heading flex w-2/6 items-center gap-1.5 text-lg font-semibold text-neutral-600 dark:text-light sm:transition-all"
         >
-          <SiCoderwall className="rotate-90 text-xs text-rose-600 dark:text-rose-400" />
+          <SiCoderwall className="rotate-90 text-xs text-blue-600 dark:text-blue-400" />
           <Link to="/">rlogank</Link>
-        </h1>
+        </h1> 
         <div
           data-aos="fade"
           data-aos-delay="200"
@@ -95,7 +95,7 @@ const Nav = () => {
           <Toggle />
           <button
             onClick={scrollToBottom}
-            className="flex h-[36px] items-center justify-center gap-1.5 rounded-md bg-rose-600 p-2.5 text-xs 
+            className="flex h-[36px] items-center justify-center gap-1.5 rounded-md bg-blue-600 p-2.5 text-xs 
           font-medium text-white dark:bg-bgDarker dark:text-light sm:transition-all sm:hover:shadow-md sm:active:shadow-none"
           >
             <FaEnvelope /> <span className="hidden sm:block">Contact</span>
