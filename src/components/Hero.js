@@ -23,7 +23,7 @@ const Hero = () => {
           <h2
             data-aos="fade"
             data-aos-delay="500"
-            className="heading text-center text-4xl font-bold tracking-tight ts text-blue-600 dark:text-blue-400 sm:transition-all md:text-5xl lg:text-left lg:text-6xl"
+            className="heading text-center text-4xl font-bold tracking-tight ts text-blue-500 dark:text-blue-400 sm:transition-all md:text-5xl lg:text-left lg:text-6xl"
           >
             I'm Logan
           </h2>
@@ -43,7 +43,7 @@ const Hero = () => {
           >
             <button
               onClick={scrollToBottom}
-              className="rounded-md bg-blue-600 px-3.5 py-2 font-medium text-white active:shadow-none dark:bg-blue-400 dark:text-bgDarkest sm:transition-all sm:hover:shadow-md sm:active:scale-95 sm:active:shadow-none"
+              className="rounded-md bg-blue-500 px-3.5 py-2 font-medium text-white active:shadow-none dark:bg-blue-400 dark:text-bgDarkest sm:transition-all sm:hover:shadow-md sm:active:scale-95 sm:active:shadow-none"
             >
               Contact
             </button>
