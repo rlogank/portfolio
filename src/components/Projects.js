@@ -24,7 +24,7 @@ const projects = [
   },
   {
     title: "Hollowverse",
-    URL: "https://hollowverse.com/",
+    URL: "https://hollowverse.com/elon-musk",
     type: "Client",
     body: "I was hired to convert the site from SCSS to Tailwind with a design overhaul.",
     stack: ["Next", "Tailwind"],
