@@ -2,6 +2,13 @@ import { FaChevronRight, FaGithub } from "react-icons/fa";
 
 const projects = [
   {
+    title: "Browser for Reddit",
+    URL: "https://browser-for-reddit.vercel.app",
+    type: "Personal",
+    body: "Reddit browser with negativity detection and filtering ",
+    stack: ["React", "Tailwind", "Express"],
+  },
+  {
     title: "Site Builder",
     URL: "https://rlogank.com/site-builder",
     type: "Personal",
@@ -47,16 +54,12 @@ const Projects = () => {
         >
           current projects
         </h3>
-        <p
-          data-aos="fade"
-          className="mt-2.5 max-w-[535px] text-center md:text-left"
-        >
-          What you will find below is a variety of personal or client projects I
-          have built, or am building.
+        <p data-aos="fade" className="mt-2.5 max-w-[535px] text-center md:text-left">
+          What you will find below is a variety of personal or client projects I have built, or am building.
         </p>
       </header>
       <section className="mx-auto flex max-w-screen-lg flex-col">
-        <div data-aos="fade" className="grid sm:grid-cols-2 gap-5">
+        <div data-aos="fade" className="grid gap-5 sm:grid-cols-2">
           {projects.map((x, i) => {
             return (
               <article data-aos="fade">
@@ -79,9 +82,7 @@ const Projects = () => {
                         Visit <FaChevronRight className="text-xs" />
                       </p>
                     </div>
-                    <p className="text-left text-sm dark:text-gray-200">
-                      {x.body}
-                    </p>
+                    <p className="text-left text-sm dark:text-gray-200">{x.body}</p>
                   </div>
                   {/* <div>{x.type}</div> */}
                   <div className="flex items-center justify-between gap-2.5 px-5 pb-5 text-[0.75rem] dark:text-gray-200 sm:transition-all">
