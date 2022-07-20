@@ -1,4 +1,6 @@
 import { FaStar } from "react-icons/fa";
+import NextSectionButton from "./NextSectionButton";
+import SectionHeader from "./SectionHeader";
 
 const Reviews = () => {
   const reviewData = [
@@ -23,30 +25,17 @@ const Reviews = () => {
   ];
 
   return (
-    <section className="mx-auto max-w-screen-lg py-10 px-5 md:py-20 lg:py-40">
-      <header className="mx-auto mb-10 flex max-w-screen-lg flex-col items-center">
-        <h3
-          data-aos="fade"
-          className="heading text-center text-4xl font-bold tracking-tight sm:transition-all md:text-4xl lg:text-5xl"
-        >
-          Some testimonials
-        </h3>
-        <h3
-          data-aos="fade"
-          className="heading text-center text-4xl font-bold tracking-tight text-blue-500 dark:text-blue-400 sm:transition-all md:text-4xl lg:text-5xl"
-        >
-          about my work
-        </h3>
-        <p data-aos="fade" className="mt-2.5 max-w-[535px] text-center">
-          I strive to perform high-quality work to ensure 100% satisfaction.
-          These are real, verifiable testimonials that I have earned.
-        </p>
-      </header>
-      <section data-aos="fade" className="mx-auto grid w-full gap-5 sm:gap-5">
+    <section className="flex w-full flex-col gap-10 border-b px-5 py-20 text-neutral-600 dark:border-[#111216] dark:bg-bgDarkest dark:bg-opacity-100 dark:text-light sm:px-5 sm:transition-all bg-white">
+      {/* <SectionHeader
+          title={<span>Feedback from my <span className="text-blue-500 dark:text-blue-400">clients</span></span>}
+        body="I strive to perform the highest quality of work to ensure my clients' 100% satisfaction.
+          These are verifiable testimonials that I have recieved."
+      /> */}
+      <section data-aos="fade" className="mx-auto grid grid-cols-2 w-full gap-5 sm:gap-5 max-w-screen-lg">
         {reviewData.map((r) => {
           return (
             <article data-aos="fade">
-              <div className="mx-auto flex w-full max-w-screen-sm rounded-[4px] border-l-4 border-blue-500 bg-white p-5 shadow-lg dark:border-blue-400 dark:bg-bgDark">
+              <div className="mx-auto flex w-full rounded-[4px] border p-5 dark:border-[#111216] dark:bg-bgDark">
                 <div className="flex flex-col justify-center gap-2.5">
                   <div className="flex justify-between">
                     <div className="w-full">
@@ -72,6 +61,7 @@ const Reviews = () => {
           );
         })}
       </section>
+      <NextSectionButton func={() => {}} />
     </section>
   );
 };

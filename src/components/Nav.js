@@ -6,6 +6,7 @@ import { SiCoderwall } from "react-icons/si";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
+import Button from "./Button";
 AOS.init();
 
 const Nav = () => {
@@ -45,61 +46,27 @@ const Nav = () => {
   return (
     <nav
       data-aos="fade"
-      className="fixed z-[9999] flex h-[56px] w-full items-center border-b bg-white px-2.5 dark:border-borderDark dark:bg-bgDark sm:transition-all"
+      className="fixed z-[900] flex w-full items-center bg-white border-b dark:border-[#111216] backdrop-blur-lg p-5 dark:bg-bgDark sm:transition-all"
     >
       <div className="mx-auto flex w-full max-w-screen-lg items-center justify-between">
         <h1
           tabindex="0"
-          data-aos="fade"
-          data-aos-delay="100"
-          className="heading flex w-2/6 items-center gap-1.5 text-lg font-semibold text-neutral-600 dark:text-light sm:transition-all"
+          className="heading transition hover:text-blue-500 flex w-2/6 items-center text-lg gap-1.5 font-semibold text-neutral-600 dark:text-light sm:transition-all"
         >
-          <SiCoderwall className="rotate-90 text-xs text-blue-500 dark:text-blue-400" />
-          <Link to="/">rlogank</Link>
+          <Link to="/" className="transition whitespace-nowrap">Logan</Link>
         </h1> 
         <div
-          data-aos="fade"
-          data-aos-delay="200"
-          className="flex w-full items-center justify-center sm:mx-auto"
-        >
-          {social.map((s) => {
-            return (
-              <button>
-                <a
-                  onMouseOver={() => setActiveItem(s.name)}
-                  onMouseOut={() => setActiveItem("")}
-                  target="_blank"
-                  rel="noreferrer"
-                  href={s.url}
-                  className={`text-neutral-500  ${s.bg} !sm:transition-all flex h-[56px] items-center gap-1 self-center px-3.5 text-[0.8rem] !duration-200 hover:bg-opacity-5 hover:text-black dark:text-light dark:hover:bg-bgDarker sm:px-5`}
-                >
-                  <div
-                    className={clsx(
-                      activeItem === s.name && `${s.color} sm:transition-all`,
-                      "text-base text-neutral-500 dark:text-light sm:text-sm sm:transition-all"
-                    )}
-                  >
-                    {s.icon}
-                  </div>
-                  <div className="hidden sm:block">{s.name}</div>
-                </a>
-              </button>
-            );
-          })}
-        </div>
-        <div
-          data-aos="fade"
-          data-aos-delay="300"
-          className="flex items-center justify-end gap-2.5 sm:transition-all"
+          className="flex items-center justify-end gap-2.5"
         >
           <Toggle />
-          <button
+          <Button text="Contact" icon={<FaEnvelope/>} primary={true}/>
+          {/* <button
             onClick={scrollToBottom}
-            className="flex h-[36px] items-center justify-center gap-1.5 rounded-md bg-blue-500 p-2.5 text-xs 
+            className="flex h-[36px] w-[36px] sm:w-auto items-center justify-center gap-1.5 rounded-md bg-blue-500 p-2.5 text-xs 
           font-medium text-white dark:bg-bgDarker dark:text-light sm:transition-all sm:hover:shadow-md sm:active:shadow-none"
           >
             <FaEnvelope /> <span className="hidden sm:block">Contact</span>
-          </button>
+          </button> */}
         </div>
       </div>
     </nav>

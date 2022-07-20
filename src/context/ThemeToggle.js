@@ -10,18 +10,18 @@ const Toggle = () => {
       {theme === "dark" ? (
         <button
           onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-          className="flex h-[36px] items-center justify-center gap-1.5 rounded-md bg-gray-100 p-2.5 text-xs font-medium text-neutral-600 active:shadow-none dark:bg-bgDarker dark:text-light sm:transition-all sm:hover:shadow-md sm:active:scale-95 sm:active:shadow-none"
+          className="relative ml-auto flex items-center gap-1.5 rounded-md font-semibold duration-150 hover:border-blue-500 hover:text-blue-500 active:border-blue-600 active:text-blue-600 active:shadow-none sm:transition-all text-sm dark:hover:text-blue-400 dark:active:text-blue-400 border px-4 py-2.5 dark:bg-bgDarker dark:border-transparent"
         >
-          <FaSun />
-          <span className="hidden whitespace-nowrap sm:block">Light mode</span>
+          <FaSun className="text-xs" />
+          <span className="whitespace-nowrap sm:block">Light mode</span>
         </button>
       ) : (
         <button
           onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-          className="flex h-[36px] items-center justify-center gap-1.5 rounded-md bg-gray-100 p-2.5 text-xs font-medium text-neutral-600 active:shadow-none dark:bg-bgDarker dark:text-light sm:transition-all sm:hover:shadow-md sm:active:scale-95 sm:active:shadow-none"
+          className="relative ml-auto flex items-center gap-1.5 rounded-md font-semibold  duration-150 hover:border-blue-500 hover:text-blue-500 active:border-blue-600 active:text-blue-600 active:shadow-none sm:transition-all text-sm dark:hover:text-blue-400 dark:active:text-blue-400 border px-4 py-2.5 dark:bg-bgDarker dark:border-transparent"
         >
-          <FaMoon className="text-[0.75rem]" />{" "}
-          <span className="hidden whitespace-nowrap sm:block">Dark mode</span>
+          <FaMoon className="text-xs" />{" "}
+          <span className="whitespace-nowrap sm:block">Dark mode</span>
         </button>
       )}
     </div>
