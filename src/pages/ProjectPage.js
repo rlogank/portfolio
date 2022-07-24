@@ -16,7 +16,7 @@ import {
   FaExternalLinkAlt,
   FaGithub,
 } from "react-icons/fa";
-import Btn from "../components/Btn";
+import Btn from "../elements/Btn";
 import { useEffect } from "react";
 import getAverageColor from "get-average-color";
 import { AnimatePresence } from "framer-motion";
@@ -121,44 +121,9 @@ const ProjectPage = () => {
                 key={i}
                 id={id}
                 next={true}
-                // arrows={
-                //   <div className="relative mx-auto flex w-full justify-between">
-                //     <button
-                //       onClick={() => {
-                //         navigate(
-                //           project === projects[0]
-                //             ? "/"
-                //             : `/${project[i - 1].title
-                //                 .replaceAll(" ", "-")
-                //                 .toLowerCase()}`
-                //         );
-                //       }}
-                //       className="absolute left-0 z-10 mx-10 rounded-full p-10 text-2xl text-white transition-all duration-300 hover:bg-opacity-25 active:bg-opacity-30 hidden lg:block top-10"
-                //     >
-                //       <FaChevronLeft />
-                //     </button>
-
-                //     <button
-                //       onClick={() => {
-                //         navigate(
-                //           project === projects[projects.length - 1]
-                //             ? `/project/${projects[0].title
-                //                 .replaceAll(" ", "-")
-                //                 .toLowerCase()}`
-                //             : `/project/${projects[i + 1].title
-                //                 .replaceAll(" ", "-")
-                //                 .toLowerCase()}`
-                //         );
-                //       }}
-                //       className="absolute right-0 z-10 mx-10 rounded-full p-10 text-2xl text-white transition-all duration-300 hover:bg-opacity-25 active:bg-opacity-30 hidden lg:block top-10"
-                //     >
-                //       <FaChevronRight />
-                //     </button>
-                //   </div>
-                // }
                 title={
                   <span className="flex w-full items-center justify-between gap-5 text-white">
-                    {project.title}{" "}
+                    {project.title}
                     <button
                       onClick={() => {
                         navigate(
@@ -194,7 +159,7 @@ const ProjectPage = () => {
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          <Btn text="Source code" icon={<FaGithub />} />
+                          <Btn text="Code" icon={<FaGithub />} />
                         </a>
                       )}
                       {project.URL && (
@@ -203,7 +168,7 @@ const ProjectPage = () => {
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          <Btn text="Live site" icon={<FaExternalLinkAlt />} />
+                          <Btn text="Live" icon={<FaExternalLinkAlt />} />
                         </a>
                       )}
                     </div>
@@ -227,6 +192,7 @@ const ProjectPage = () => {
               </ProjectWrapper>
             );
           }
+          return null;
         })}
       </AnimatePresence>
     </>

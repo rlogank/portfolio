@@ -3,10 +3,8 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import ProjectPage from "./pages/ProjectPage";
 import Footer from "./components/Footer";
-import {useScrollToTop} from './components/useScrollToTop'
 
 function App() {
-  useScrollToTop()
   return (
     <div className="min-h-screen overflow-x-hidden text-neutral-600 dark:bg-bgDarker dark:text-light sm:transition-all">
       <Nav />
@@ -15,7 +13,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/project/:id" element={<ProjectPage />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

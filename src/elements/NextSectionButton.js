@@ -8,7 +8,7 @@ const NextSectionButton = (props) => {
       {props.nextId ? (
         <Btn
           icon={<FaChevronDown />}
-        text={<span className="capitalize">{props.nextId}</span>}
+          text={<span className="capitalize">{props.nextId}</span>}
           func={() => {
             const id = props.nextId;
             const yOffset = -60;
@@ -20,16 +20,21 @@ const NextSectionButton = (props) => {
 
             window.scrollTo({ top: y, behavior: "smooth" });
           }}
+          noPadding={true}
+          white={props.white}
         >
-          {props.nextId}<FaChevronDown className="text-xs" />
+          {props.nextId}
+          <FaChevronDown className="text-xs" />
         </Btn>
       ) : (
         <Btn
-        text="Back to top"
-        icon={<FaChevronUp />}
+          text="Back to top"
+          icon={<FaChevronUp />}
           func={() => {
-            window.scrollTo({ top:0, behavior: "smooth" });
+            window.scrollTo({ top: 0, behavior: "smooth" });
           }}
+          noPadding={true}
+          white={props.white}
         >
           <div className="ml-auto text-sm">Back to top</div>
           <FaChevronUp className="text-xs" />

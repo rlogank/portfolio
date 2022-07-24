@@ -24,21 +24,18 @@ const Skills = () => {
       name: "Accessibility",
       color: "text-indigo-600",
     },
-
     {
       title: <SiAntdesign />,
       name: "UX/UI",
       color: "text-blue-600",
       break: false,
     },
-
     {
       title: <SiCsswizardry />,
       name: "CSS",
       color: "text-sky-600 ",
       break: false,
     },
-
     {
       title: <SiTailwindcss />,
       name: "Tailwind",
@@ -75,7 +72,6 @@ const Skills = () => {
       color: "text-cyan-600",
       break: false,
     },
-
     {
       title: <SiHtml5 />,
       name: "HTML5",
@@ -88,7 +84,6 @@ const Skills = () => {
       color: "text-emerald-600",
       break: false,
     },
-
     {
       title: <SiFirebase />,
       name: "Firebase",

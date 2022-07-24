@@ -22,9 +22,11 @@ const Form = () => {
   useEffect(() => {
     const regex =
       /^(([^<>()\]\\.,;:\s@"]+(\.[^<>()\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
     if (name.length > 1) {
       setNameValid(true);
     } else setNameValid(false);
+
     if (message.length > 9) {
       setMessageValid(true);
     } else {
@@ -36,6 +38,7 @@ const Form = () => {
     } else {
       setEmailValid(false);
     }
+
     if (nameValid && emailValid && messageValid) {
       setValid(true);
       console.log("all valid");
@@ -81,13 +84,13 @@ const Form = () => {
           <header>
             <h3
               data-aos="fade"
-              className="heading text-center text-4xl font-semibold tracking-tight sm:text-center sm:transition-all md:text-left md:text-4xl lg:text-5xl"
+              className="heading text-center text-4xl font-bold sm:text-center sm:transition-all md:text-left md:text-4xl lg:text-5xl"
             >
               Let's work together,
             </h3>
             <h3
               data-aos="fade"
-              className="heading text-center text-4xl font-bold tracking-tight text-blue-600 dark:text-blue-500 sm:text-center sm:transition-all md:text-left md:text-4xl lg:text-5xl"
+              className="heading text-center text-4xl font-bold text-blue-600 dark:text-blue-500 sm:text-center sm:transition-all md:text-left md:text-4xl lg:text-5xl"
             >
               contact me
             </h3>
@@ -104,7 +107,7 @@ const Form = () => {
             <section
               data-aos="fade"
               data-aos-delay="200"
-              className="mx-auto max-w-screen-lg rounded-md bg-gradient-to-tl from-blue-600 to-blue-500 dark:to-blue-600 p-5 shadow-md dark:border-blue-400 dark:bg-bgDarkest"
+              className="mx-auto max-w-screen-lg rounded-md bg-gradient-to-tl from-blue-600 to-blue-500 p-5 shadow-md dark:border-blue-400 dark:bg-bgDarkest dark:to-blue-600"
             >
               <form
                 className=""
@@ -194,7 +197,11 @@ const Form = () => {
                         "Submit"
                       )
                     ) : (
-                      <LoadingIcons.Bars className="flex h-5 w-5 justify-center self-center bg-blue-600 rounded-full p-1" fill="#FFF" stroke="#FFF" />
+                      <LoadingIcons.Bars
+                        className="flex h-5 w-5 justify-center self-center rounded-full bg-blue-600 p-1"
+                        fill="#FFF"
+                        stroke="#FFF"
+                      />
                     )}
                   </button>
                 </div>

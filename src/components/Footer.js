@@ -1,6 +1,7 @@
 import { FaEnvelope, FaLocationArrow, FaPaperclip } from "react-icons/fa";
 import { SiCoderwall } from "react-icons/si";
 import resume from "../logan-keene-resume.pdf";
+
 const Footer = () => {
   return (
     <footer

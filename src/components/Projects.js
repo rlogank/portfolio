@@ -7,7 +7,6 @@ import frozen from "../assets/frozen.webp";
 import openai from "../assets/openai.webp";
 import pern from "../assets/pern.webp";
 import getAverageColor from "get-average-color";
-import NextSectionButton from "./NextSectionButton";
 import { FaChevronRight } from "react-icons/fa";
 import SectionWrapper from "../wrappers/SectionWrapper";
 import { Link } from "react-router-dom";
@@ -100,10 +99,11 @@ const Projects = () => {
       span="current projects"
       body="What you will find below is a variety of personal or client projects I have built, or am building. I am usually working at multiple projects at the same time. If you ask, I'll tell you all about them!"
     >
-      <div className="grid lg:grid-cols-2 gap-5">
+      <div className="grid gap-5 lg:grid-cols-2">
         {projects.map((p, i) => {
           return (
-            <Link data-aos="fade-in"
+            <Link
+              data-aos="fade-in"
               to={`/project/${p.title.replaceAll(" ", "-").toLowerCase()}`}
               key={i}
               className="flex w-full gap-5 overflow-hidden rounded-md p-5 dark:border-borderDark"

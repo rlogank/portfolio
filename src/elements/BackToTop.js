@@ -1,7 +1,7 @@
 import React from "react";
-import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import { FaChevronUp } from "react-icons/fa";
 
-const BackToTop = (props) => {
+const BackToTop = () => {
   return (
     <div className="relative mx-auto flex w-full max-w-screen-lg justify-end">
       <button

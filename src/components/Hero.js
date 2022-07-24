@@ -2,13 +2,12 @@ import Skills from "./Skills";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Tilt from "react-parallax-tilt";
-import SectionWrapper from "../wrappers/SectionWrapper";
-import NextSectionButton from "./NextSectionButton";
-import Btn from "./Btn";
+import NextSectionButton from "../elements/NextSectionButton";
+import Btn from "../elements/Btn";
 import { FaEnvelope } from "react-icons/fa";
 import resume from "../logan-keene-resume.pdf";
-import { Link } from "react-router-dom";
-AOS.init();
+
+AOS.init({ disable: "mobile" });
 
 const Hero = () => {
   return (
@@ -25,18 +24,25 @@ const Hero = () => {
               applications with modern frameworks and libraries like React and
               Tailwind.
             </p>
-            <span
-              onClick={() => {
-                // scroll to bottom of page
-                window.scrollTo({
-                  top: document.body.scrollHeight,
-                  behavior: "smooth",
-                });
-              }}
-              className="mt-2.5 flex"
-            >
-              <Btn text="Contact me" icon={<FaEnvelope />} />
-              <a href={resume} rel="noopener noreferrer" target="_blank" className="flex items-center gap-1.5 rounded-md border border-transparent bg-opacity-95 px-4 py-2.5 text-xs lg:text-sm font-semibold transition active:shadow-none  dark:shadow-none dark:active:border-transparent text-white self-start dark:text-white">Resume</a>
+            <span className="mt-2.5 flex">
+              <Btn
+                func={() => {
+                  window.scrollTo({
+                    top: document.body.scrollHeight,
+                    behavior: "smooth",
+                  });
+                }}
+                text="Contact me"
+                icon={<FaEnvelope />}
+              />
+              <a
+                href={resume}
+                rel="noopener noreferrer"
+                target="_blank"
+                className="flex items-center gap-1.5 self-start rounded-md border border-transparent bg-opacity-95 px-4 py-2.5 text-sm font-semibold text-white transition active:shadow-none dark:text-white dark:shadow-none dark:active:border-transparent"
+              >
+                Resume
+              </a>
             </span>
           </div>
         </div>

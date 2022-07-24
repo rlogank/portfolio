@@ -1,6 +1,6 @@
 import React from "react";
 import { FaSun, FaMoon } from "react-icons/fa";
-import Btn from "../components/Btn";
+import Btn from "../elements/Btn";
 import { ThemeContext } from "./ThemeContext";
 
 const Toggle = () => {
@@ -11,9 +11,9 @@ const Toggle = () => {
       {theme === "dark" ? (
         <Btn
           text="Light mode"
-          icon={<FaMoon/>}
+          icon={<FaMoon />}
           func={() => setTheme(theme === "dark" ? "light" : "dark")}
-
+          noPadding={true}
         >
           <FaSun className="text-xs" />
           <span className="whitespace-nowrap sm:block">Light mode</span>
@@ -21,9 +21,9 @@ const Toggle = () => {
       ) : (
         <Btn
           text="Dark mode"
-          icon={<FaMoon/>}
+          icon={<FaMoon />}
           func={() => setTheme(theme === "dark" ? "light" : "dark")}
-
+          noPadding={true}
         >
           <FaMoon className="text-xs" />{" "}
           <span className="whitespace-nowrap sm:block">Dark mode</span>

@@ -1,7 +1,5 @@
 import { FaStar } from "react-icons/fa";
 import SectionWrapper from "../wrappers/SectionWrapper";
-import NextSectionButton from "./NextSectionButton";
-import SectionHeader from "./SectionHeader";
 
 const Reviews = () => {
   const reviewData = [
@@ -10,7 +8,6 @@ const Reviews = () => {
       name: "Teddy M.",
       details: "Backend Developer, Private Client",
     },
-
     {
       body: `Logan was very helpful, patient and tried every route to fix my
       website issue. He successfully fixed the problem with me on the phone, and
@@ -31,9 +28,9 @@ const Reviews = () => {
       <SectionWrapper
         id="reviews"
         nextId="contact"
-        title="What my"
-        span="clients are saying"
+        title="What my clients are saying"
         body="I strive to perform the highest quality of work to ensure my clients' 100% satisfaction. These are verifiable testimonials that I have recieved."
+        white={true}
       >
         <section
           data-aos="fade"

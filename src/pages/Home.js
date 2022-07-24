@@ -1,4 +1,3 @@
-import Nav from "../components/Nav";
 import Hero from "../components/Hero";
 import Contact from "../components/Contact";
 import Projects from "../components/Projects";
@@ -7,14 +6,13 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 const Home = () => {
-const location = useLocation();
+  const location = useLocation();
 
   useEffect(() => {
     if (!location.pathname.includes("/project/")) {
       document.getElementById("main").style.backgroundColor = "white";
     }
-  },[location])
-
+  }, [location]);
 
   return (
     <>

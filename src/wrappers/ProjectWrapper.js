@@ -1,5 +1,5 @@
-import NextSectionButton from "../components/NextSectionButton";
-import ProjectHeader from "../components/ProjectHeader";
+import NextSectionButton from "../elements/NextSectionButton";
+import ProjectHeader from "../elements/ProjectHeader";
 import { motion } from "framer-motion";
 
 const ProjectWrapper = (props) => {
