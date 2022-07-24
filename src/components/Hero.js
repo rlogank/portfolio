@@ -6,6 +6,8 @@ import SectionWrapper from "../wrappers/SectionWrapper";
 import NextSectionButton from "./NextSectionButton";
 import Btn from "./Btn";
 import { FaEnvelope } from "react-icons/fa";
+import resume from "../logan-keene-resume.pdf";
+import { Link } from "react-router-dom";
 AOS.init();
 
 const Hero = () => {
@@ -31,9 +33,10 @@ const Hero = () => {
                   behavior: "smooth",
                 });
               }}
-              className="mt-2.5"
+              className="mt-2.5 flex"
             >
               <Btn text="Contact me" icon={<FaEnvelope />} />
+              <a href={resume} rel="noopener noreferrer" target="_blank" className="flex items-center gap-1.5 rounded-md border border-transparent bg-opacity-95 px-4 py-2.5 text-xs lg:text-sm font-semibold transition active:shadow-none  dark:shadow-none dark:active:border-transparent text-white self-start dark:text-white">Resume</a>
             </span>
           </div>
         </div>

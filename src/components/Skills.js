@@ -133,11 +133,9 @@ const Skills = () => {
     },
   ];
 
-
-
   return (
     <section className="w-full text-neutral-700 dark:text-light sm:transition-all">
-      <div className="grid w-full grid-cols-3 justify-center justify-items-center gap-10 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6">
+      <div className="grid w-full grid-cols-3 justify-center justify-items-center gap-5 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 lg:gap-10">
         {skillsList.map((x, i) => {
           return (
             <div
@@ -145,7 +143,7 @@ const Skills = () => {
               key={i}
               data-aos-delay={i * 100}
               className={clsx(
-                `text-white relative z-20 flex aspect-square w-full flex-col items-center justify-center gap-2.5 truncate rounded-[4px] bg-gradient-to-br from-blue-600 to-blue-500 dark:to-blue-600 dark:border-bgDark dark:bg-bgDark dark:shadow-none sm:p-10 sm:transition-all`,
+                `relative z-20 flex aspect-square w-full flex-col items-center justify-center gap-2.5 truncate rounded-[4px] bg-gradient-to-br from-blue-600 to-blue-500 text-white dark:border-bgDark dark:bg-bgDark dark:to-blue-600 dark:shadow-none sm:p-10 sm:transition-all`,
                 x.break === true && "hidden md:flex"
               )}
             >

@@ -87,7 +87,7 @@ const Form = () => {
             </h3>
             <h3
               data-aos="fade"
-              className="heading text-center text-4xl font-semibold tracking-tight text-blue-500 dark:text-blue-400 sm:text-center sm:transition-all md:text-left md:text-4xl lg:text-5xl"
+              className="heading text-center text-4xl font-bold tracking-tight text-blue-600 dark:text-blue-500 sm:text-center sm:transition-all md:text-left md:text-4xl lg:text-5xl"
             >
               contact me
             </h3>
