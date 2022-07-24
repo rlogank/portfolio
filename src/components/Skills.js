@@ -17,7 +17,6 @@ import {
   SiGoogle,
 } from "react-icons/si";
 
-
 const Skills = () => {
   const skillsList = [
     {
@@ -134,32 +133,31 @@ const Skills = () => {
     },
   ];
 
+
+
   return (
-    <section className="w-full mt-5 text-neutral-700 dark:text-light sm:transition-all">
-      <div
-        className="grid w-full grid-cols-3 justify-center justify-items-center gap-5 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6"
-      >
+    <section className="w-full text-neutral-700 dark:text-light sm:transition-all">
+      <div className="grid w-full grid-cols-3 justify-center justify-items-center gap-5 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6">
         {skillsList.map((x, i) => {
           return (
-            
-              <div
-                data-aos="fade"
-                data-aos-delay={i * 100}
-                className={clsx(
-                  `${x.color} relative z-20 flex aspect-square w-full flex-col items-center justify-center gap-2.5 truncate rounded-[4px] bg-white bg-opacity-30 p-5 dark:border-bgDark dark:bg-bgDark dark:shadow-none sm:p-10 sm:transition-all`,
-                  x.break === true && "hidden md:flex"
-                )}
+            <div
+              data-aos="fade"
+              key={i}
+              data-aos-delay={i * 100}
+              className={clsx(
+                `${x.color} relative z-20 flex aspect-square w-full flex-col items-center justify-center gap-2.5 truncate rounded-[4px] bg-white bg-opacity-30 dark:border-bgDark dark:bg-bgDark dark:shadow-none sm:p-10 sm:transition-all`,
+                x.break === true && "hidden md:flex"
+              )}
+            >
+              <span
+                className={`translate-z heading select-none text-2xl font-bold tracking-tight sm:transition-all md:text-3xl lg:text-4xl`}
               >
-                <span
-                  className={`translate-z heading select-none text-2xl font-bold tracking-tight sm:transition-all md:text-3xl lg:text-4xl`}
-                >
-                  {x.title}
-                </span>
-                <h3 className="heading select-none text-center text-[0.7rem] tracking-tight ">
-                  {x.name}
-                </h3>
-              </div>
-            
+                {x.title}
+              </span>
+              <h3 className="heading select-none text-center text-[0.7rem] tracking-tight ">
+                {x.name}
+              </h3>
+            </div>
           );
         })}
       </div>

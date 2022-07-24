@@ -1,23 +1,17 @@
-import { useEffect, useState } from "react";
-import {
-  FaChevronRight,
-  FaGithub,
-  FaEye,
-  FaChevronCircleDown,
-  FaTimes,
-  FaExternalLinkAlt,
-} from "react-icons/fa";
+import blaster from "../assets/blaster.webp";
+import browser from "../assets/browser.webp";
+import builder from "../assets/builder.webp";
+import burbl from "../assets/burbl.webp";
+import frozens from "../assets/frozen-s.webp";
+import frozen from "../assets/frozen.webp";
+import openai from "../assets/openai.webp";
+import pern from "../assets/pern.webp";
+import getAverageColor from "get-average-color";
 import NextSectionButton from "./NextSectionButton";
-import SectionHeader from "./SectionHeader";
-import blaster from "./ss/blaster.png";
-import browser from "./ss/browser.png";
-import builder from "./ss/builder.png";
-import burbl from "./ss/burbl.png";
-import frozens from "./ss/frozen-s.webp";
-import frozen from "./ss/frozen.png";
-import openai from "./ss/openai.png";
-import pern from "./ss/pern.png";
-import Tilt from "react-parallax-tilt";
+import { FaChevronRight } from "react-icons/fa";
+import SectionWrapper from "../wrappers/SectionWrapper";
+import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 const projects = [
   {
@@ -28,7 +22,7 @@ const projects = [
     screenshot: blaster,
   },
   {
-    title: "AI Discord Bot (GPT-3)",
+    title: "AI Discord Bot",
     URL: "",
     type: "Personal",
     body: "I recently applied for access to OpenAI's GPT-3 API and was approved. In conjuction with DiscordJS, I made this Discord bot that generate smart replies using GPT-3 artifical intelligence.",
@@ -88,130 +82,64 @@ const projects = [
 ];
 
 const Projects = () => {
-  const [activeImage, setActiveImage] = useState(null);
-  const [imageOpen, setImageOpen] = useState(false);
-
   useEffect(() => {
-    if (imageOpen) {
-      document.body.style.overflow = "hidden";
-    }
-    if (!imageOpen) {
-      document.body.style.overflow = "auto";
-    }
-  }, [imageOpen]);
-
-  console.log(activeImage);
+    projects.forEach((project) => {
+      getAverageColor(project.screenshot).then((rgb) => {
+        document.getElementById(
+          project.title.replaceAll(" ", "-").toLowerCase()
+        ).style.backgroundColor = `rgb(${rgb.r}, ${rgb.g}, ${rgb.b})`;
+      });
+    });
+  }, []);
 
   return (
-    <>
-      {imageOpen && (
-        <div
-          onClick={() => {
-            setImageOpen(!imageOpen);
-          }}
-          className="fixed top-0 z-[1000] h-[2000px] w-screen bg-black bg-opacity-90"
-          data-aos="fade-up"
-        >
-          <div className="fixed inset-0 flex h-screen items-center justify-center">
-            <p className="absolute top-5 right-5 ml-auto cursor-pointer text-2xl text-white">
-              <FaTimes />
-            </p>
-            <img
-              src={activeImage}
-              alt="My project screenshot"
-              className="fixed flex max-w-[90vw] justify-center self-center"
-            />
-          </div>
-        </div>
-      )}
-      <section className="flex w-full flex-col gap-10 border-y bg-white px-5 py-20 text-neutral-600 dark:border-[#111216] dark:bg-bgDarkest dark:bg-opacity-100 dark:text-light sm:px-5 sm:transition-all">
-        {/* <SectionHeader
-          title={<span>These are my <span className="text-blue-500 dark:text-blue-400">current projects</span></span>}
-          body="What you will find below is a variety of personal or client projects I have built, or am building. I am usually working at multiple projects at the same time. If you ask, I'll tell you all about them!"
-        /> */}
-        <section className="mx-auto flex max-w-screen-lg flex-col">
-          <div data-aos="fade" className="grid gap-5 sm:grid-cols-3">
-            {projects.map((x, i) => {
-              return (
-                <article
-                  onMouseOver={() => {
-                    setActiveImage(x.screenshot);
-                  }}
-                  onMouseOut={() => {
-                    if (!imageOpen) setActiveImage(null);
-                  }}
-                  data-aos="fade"
-                  key={i}
-                >
-                  <div
-                    href={x.URL}
-                    target="_blank"
-                    rel="noreferrer"
-                    key={i}
-                    className="flex flex-col justify-between rounded-[4px] border dark:border-[#111216] dark:bg-bgDarker dark:bg-opacity-100 sm:transition"
-                  >
-                    <div className="flex flex-col">
-                      <div className="flex w-full items-baseline justify-between border-b p-5 dark:border-[#111216]">
-                        <h4 className="heading font-semibold">{x.title}</h4>
-                        <h5 className="text-xs text-neutral-500 dark:text-gray-400">
-                          {x.type}
-                        </h5>
-                      </div>
-                      <img
-                        src={x.screenshot}
-                        alt=""
-                        className="relative h-[165px] object-cover object-top"
-                      />
-                      {activeImage === x.screenshot && (
-                        <div
-                          onClick={() => {
-                            setImageOpen(!imageOpen);
-                          }}
-                          data-aos="fade"
-                          className="absolute top-0 mt-[65px] flex h-[165px] w-full cursor-pointer items-center justify-center text-white transition"
-                        >
-                          <button className="pointer-events-none inline-flex items-center justify-center gap-2.5 self-center rounded-md bg-black px-4 py-2.5 text-white">
-                            <FaEye />
-                            View full
-                          </button>
-                        </div>
-                      )}
-                      {/* <p className="h-[140px] bg-white p-5 text-left text-sm dark:bg-bgDarker dark:text-gray-200">
-                        {x.body}
-                      </p> */}
+    <SectionWrapper
+      id="portfolio"
+      nextId="reviews"
+      title="My"
+      span="current projects"
+      body="What you will find below is a variety of personal or client projects I have built, or am building. I am usually working at multiple projects at the same time. If you ask, I'll tell you all about them!"
+    >
+      <div className="grid lg:grid-cols-2 gap-5">
+        {projects.map((p, i) => {
+          return (
+            <Link data-aos="fade-in"
+              to={`/project/${p.title.replaceAll(" ", "-").toLowerCase()}`}
+              key={i}
+              className="flex w-full gap-5 overflow-hidden rounded-md p-5 dark:border-borderDark"
+              id={p.title.replaceAll(" ", "-").toLowerCase()}
+            >
+              <img
+                src={p.screenshot}
+                alt="Project screenshot"
+                className="pointer-events-none h-28 w-28 rounded-md bg-bgDarkest object-cover object-left-top"
+              />
+              <div className="flex justify-between">
+                <div className="flex w-full items-start justify-between self-center">
+                  <div className="flex flex-col gap-2 mix-blend-color-dodge">
+                    <div className="text-lg font-bold brightness-[2.3] dark:text-neutral-700">
+                      {p.title}
                     </div>
-                    {/* <div className="flex items-center gap-2.5 border-t dark:bg-bgDark p-5 text-[0.75rem] dark:border-[#111216] dark:text-gray-200">
-                      {x.sourceCode && (
-                        <a href={x.sourceCode} target="_blank" rel="noreferrer" className="flex bg-white dark:bg-bgDarker px-3.5 py-2 rounded-md cursor-pointer select-none items-center gap-1.5 text-xs transition hover:text-blue-500 dark:hover:text-blue-400 border dark:border-transparent">
-                          <FaGithub className="text-xs" /> GitHub
-                        </a>
-                      )}
-                      {x.URL && (
-                        <a href={x.URL} target="_blank" rel="noreferrer" className="flex bg-white dark:bg-bgDarker px-3.5 py-2 rounded-md cursor-pointer select-none items-center gap-1.5 text-xs transition hover:text-blue-500 dark:hover:text-blue-400 border dark:border-transparent">
-                          <FaExternalLinkAlt className="text-xs" /> Live
-                        </a>
-                      )}
-                      <span
-                        onMouseOver={() => {
-                          setActiveImage(x.screenshot);
-                        }}
-                        onClick={() => {
-                          setImageOpen(!imageOpen);
-                        }}
-                        className="flex bg-white dark:bg-bgDarker px-3.5 py-2 rounded-md cursor-pointer select-none items-center gap-1.5 text-xs transition hover:text-blue-500 dark:hover:text-blue-400 border dark:border-transparent"
-                      >
-                        <FaEye className="text-base" /> Screenshot
-                      </span>
-                    </div> */}
+                    <div className="text-sm brightness-[2.3] line-clamp-2 dark:brightness-100">
+                      {p.body}
+                    </div>
+                    <button className="flex items-center gap-1.5 text-sm brightness-[2.7] dark:brightness-100">
+                      More info <FaChevronRight className="text-xs" />
+                    </button>
                   </div>
-                </article>
-              );
-            })}
-          </div>
-        </section>
-        <NextSectionButton />
-      </section>
-    </>
+                </div>
+              </div>
+              {/* <img
+                id={p.title.replaceAll(" ", "-").toLowerCase() + "-img"}
+                src={p.screenshot}
+                alt="Project screenshot"
+                className="w-full bg-bgDarkest object-cover object-left-top"
+              /> */}
+            </Link>
+          );
+        })}
+      </div>
+    </SectionWrapper>
   );
 };
 

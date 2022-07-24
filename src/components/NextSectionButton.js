@@ -1,16 +1,40 @@
 import React from "react";
-import { FaChevronDown } from "react-icons/fa";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import Btn from "./Btn";
 
 const NextSectionButton = (props) => {
   return (
-    <div className="relative mx-auto mt-10 flex w-full max-w-screen-lg justify-end">
-      <button
-        onClick={props.func}
-        className="flex items-center gap-2.5 rounded-md border border-neutral-300 p-2.5 text-neutral-400 duration-1000 focus:border-blue-500  focus:text-blue-500 dark:border-transparent dark:bg-bgDark dark:text-light dark:focus:border dark:focus:border-blue-400 dark:focus:bg-bgDarker dark:focus:text-blue-400 sm:transition-all"
-      >
-        <div className="ml-auto text-sm">Next section</div>
-        <FaChevronDown className="text-xs" />
-      </button>
+    <div className="relative mx-auto flex w-full max-w-screen-lg justify-end">
+      {props.nextId ? (
+        <Btn
+          icon={<FaChevronDown />}
+        text={<span className="capitalize">{props.nextId}</span>}
+          func={() => {
+            const id = props.nextId;
+            const yOffset = -60;
+            const element = document.getElementById(id);
+            const y =
+              element.getBoundingClientRect().top +
+              window.pageYOffset +
+              yOffset;
+
+            window.scrollTo({ top: y, behavior: "smooth" });
+          }}
+        >
+          {props.nextId}<FaChevronDown className="text-xs" />
+        </Btn>
+      ) : (
+        <Btn
+        text="Back to top"
+        icon={<FaChevronUp />}
+          func={() => {
+            window.scrollTo({ top:0, behavior: "smooth" });
+          }}
+        >
+          <div className="ml-auto text-sm">Back to top</div>
+          <FaChevronUp className="text-xs" />
+        </Btn>
+      )}
     </div>
   );
 };

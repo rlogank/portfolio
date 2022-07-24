@@ -3,6 +3,7 @@ import toast from "react-hot-toast";
 import React, { useRef, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import { FaTimes } from "react-icons/fa";
+import SectionWrapper from "../wrappers/SectionWrapper";
 
 const Form = () => {
   const [valid, setValid] = useState(false);
@@ -74,10 +75,7 @@ const Form = () => {
   };
 
   return (
-    <section
-      id="bottom"
-      className="w-full bg-gray-200 py-10 dark:bg-bgDarkest px-5 md:py-20 lg:py-44"
-    >
+    <SectionWrapper id="contact">
       <div className="mx-auto flex max-w-screen-lg flex-col items-center justify-start">
         <div className="flex flex-col items-center gap-10 md:flex-row">
           <header>
@@ -106,7 +104,7 @@ const Form = () => {
             <section
               data-aos="fade"
               data-aos-delay="200"
-              className="mx-auto max-w-screen-lg rounded-[4px] border-t-4 border-blue-500 bg-gray-100 p-5 shadow-md dark:border-blue-400 dark:bg-bgDarker md:p-5"
+              className="mx-auto max-w-screen-lg rounded-[4px] dark:border-blue-400 dark:bg-bgDarkest bg-gray-100 p-5"
             >
               <form
                 className=""
@@ -128,7 +126,7 @@ const Form = () => {
                       required
                       title="Name"
                       placeholder="Name"
-                      className="flex w-1/2 cursor-pointer self-center rounded-[4px] py-2 px-3.5 outline outline-transparent hover:bg-opacity-20 focus:cursor-text  focus:bg-opacity-25 focus:outline-blue-500 dark:bg-bgDark dark:focus:outline-blue-400 sm:transition-all"
+                      className="flex w-1/2 cursor-pointer self-center rounded-[4px] py-2 px-3.5 outline outline-transparent hover:bg-opacity-20 focus:cursor-text  focus:bg-opacity-25 focus:outline-blue-500 dark:bg-bgDark dark:focus:outline-blue-400 sm:transition-all bg-white"
                     />
                     <input
                       onChange={(e) => setEmail(e.target.value)}
@@ -139,7 +137,7 @@ const Form = () => {
                       id="email"
                       required
                       placeholder="Email"
-                      className="flex w-1/2 cursor-pointer self-center rounded-[4px] py-2 px-3.5 outline outline-transparent hover:bg-opacity-20 focus:cursor-text  focus:bg-opacity-25 focus:outline-blue-500 dark:bg-bgDark dark:focus:outline-blue-400 sm:transition-all"
+                      className="flex w-1/2 cursor-pointer self-center rounded-[4px] py-2 px-3.5 outline outline-transparent hover:bg-opacity-20 focus:cursor-text  focus:bg-opacity-25 focus:outline-blue-500 dark:bg-bgDark dark:focus:outline-blue-400 sm:transition-all bg-white"
                     />
                   </div>
                   <textarea
@@ -152,7 +150,7 @@ const Form = () => {
                     autoComplete="message"
                     required
                     placeholder="Message"
-                    className="flex w-full cursor-pointer resize-none self-center rounded-[4px] py-2 px-3.5 outline outline-transparent hover:bg-opacity-20 focus:cursor-text  focus:bg-opacity-25 focus:outline-blue-500 dark:bg-bgDark dark:focus:outline-blue-400 sm:transition-all"
+                    className="flex w-full cursor-pointer resize-none self-center rounded-[4px] py-2 px-3.5 outline outline-transparent hover:bg-opacity-20 focus:cursor-text  focus:bg-opacity-25 focus:outline-blue-500 dark:bg-bgDark dark:focus:outline-blue-400 sm:transition-all bg-white"
                   />
                 </div>
                 <div className="flex pt-2.5 text-xs font-normal md:pt-5">
@@ -205,7 +203,7 @@ const Form = () => {
           </div>
         </div>
       </div>
-    </section>
+    </SectionWrapper>
   );
 };
 

@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer
       data-aos-offset="1000"
-      className="select-none py-10 px-5 dark:bg-bgDarker lg:py-20 lg:px-10"
+      className="select-none py-10 px-5 dark:bg-bgDarker bg-white lg:py-20 lg:px-10"
     >
       <div className="mx-auto max-w-screen-lg">
         <div className="grid gap-10 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">

@@ -1,28 +1,22 @@
 import Nav from "./components/Nav";
-import Hero from "./components/Hero";
-import Contact from "./components/Contact";
-import Projects from "./components/Projects";
-import Reviews from "./components/Reviews";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import ProjectPage from "./pages/ProjectPage";
 import Footer from "./components/Footer";
-import { useState } from "react";
-import { MouseParallaxContainer } from "react-parallax-mouse";
-
-
+import {useScrollToTop} from './components/useScrollToTop'
 
 function App() {
-const [posts, setPosts] = useState(null)
+  useScrollToTop()
   return (
-    
-    <div className="min-h-screen text-neutral-700 dark:bg-bgDarker dark:text-light sm:transition-all">
-
+    <div className="min-h-screen overflow-x-hidden text-neutral-600 dark:bg-bgDarker dark:text-light sm:transition-all">
       <Nav />
-      <div className="pt-[68px]" />
-      <Hero />
-      <Projects />
-      <Reviews />
-      <Contact />
-      <Footer />
-</div>
+      <div className="pt-[60px]" />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/project/:id" element={<ProjectPage />} />
+      </Routes>
+      <Footer/>
+    </div>
   );
 }
 

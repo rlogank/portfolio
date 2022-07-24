@@ -1,14 +1,16 @@
 import { FaStar } from "react-icons/fa";
+import SectionWrapper from "../wrappers/SectionWrapper";
 import NextSectionButton from "./NextSectionButton";
 import SectionHeader from "./SectionHeader";
 
 const Reviews = () => {
   const reviewData = [
     {
-      body: `I hired Logan to give my website a "facelift." He came back with a beautiful and clean fully new design that looked better than all of the other 10 designs that I was evaluating at the time. And he implemented it in a day. Logan's skills are impressive, and I would highly recommend him!`,
-      name: "Michael K.",
-      details: "Web Developer, Hollowverse.com",
+      body: "Logan is a hard working and dedicated individual I hired to create a front end interface.  Being a coder myself I can  tell that Logan's revisions and initial commits are of high quality and well thought-out. Will hire again.",
+      name: "Teddy M.",
+      details: "Backend Developer, Private Client",
     },
+
     {
       body: `Logan was very helpful, patient and tried every route to fix my
       website issue. He successfully fixed the problem with me on the phone, and
@@ -18,24 +20,28 @@ const Reviews = () => {
       details: "Web Developer, Upwork Client",
     },
     {
-      body: "Logan is a hard working and dedicated individual I hired to create a front end interface.  Being a coder myself I can  tell that Logan's revisions and initial commits are of high quality and well thought-out. Will hire again.",
-      name: "Teddy M.",
-      details: "Backend Developer, Private Client",
+      body: `I hired Logan to give my website a "facelift." He came back with a beautiful and clean fully new design that looked better than all of the other 10 designs that I was evaluating at the time. And he implemented it in a day. Logan's skills are impressive, and I would highly recommend him!`,
+      name: "Michael K.",
+      details: "Web Developer, Hollowverse.com",
     },
   ];
 
   return (
-    <section className="flex w-full flex-col gap-10 border-b px-5 py-20 text-neutral-600 dark:border-[#111216] dark:bg-bgDarkest dark:bg-opacity-100 dark:text-light sm:px-5 sm:transition-all bg-white">
-      {/* <SectionHeader
-          title={<span>Feedback from my <span className="text-blue-500 dark:text-blue-400">clients</span></span>}
-        body="I strive to perform the highest quality of work to ensure my clients' 100% satisfaction.
-          These are verifiable testimonials that I have recieved."
-      /> */}
-      <section data-aos="fade" className="mx-auto grid grid-cols-2 w-full gap-5 sm:gap-5 max-w-screen-lg">
-        {reviewData.map((r) => {
+    <SectionWrapper
+      id="reviews"
+      nextId="contact"
+      title="What my"
+      span="clients are saying"
+      body="I strive to perform the highest quality of work to ensure my clients' 100% satisfaction. These are verifiable testimonials that I have recieved."
+    >
+      <section
+        data-aos="fade"
+        className="mx-auto grid w-full max-w-screen-lg lg:grid-cols-2 gap-5 sm:gap-5"
+      >
+        {reviewData.map((r, i) => {
           return (
-            <article data-aos="fade">
-              <div className="mx-auto flex w-full rounded-[4px] border p-5 dark:border-[#111216] dark:bg-bgDark">
+            <article key={i} data-aos="fade">
+              <div className="mx-auto flex w-full rounded-[4px] shadow-md p-5 dark:border-[#111216] dark:bg-bgDark">
                 <div className="flex flex-col justify-center gap-2.5">
                   <div className="flex justify-between">
                     <div className="w-full">
@@ -61,8 +67,7 @@ const Reviews = () => {
           );
         })}
       </section>
-      <NextSectionButton func={() => {}} />
-    </section>
+    </SectionWrapper>
   );
 };
 
