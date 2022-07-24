@@ -27,7 +27,7 @@ const Reviews = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-tl from-blue-600 to-blue-600  text-white">
+    <div className="bg-gradient-to-tl from-blue-600 to-blue-500  text-white">
       <SectionWrapper
         id="reviews"
         nextId="contact"
