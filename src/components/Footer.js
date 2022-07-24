@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer
       data-aos-offset="1000"
-      className="select-none py-10 px-5 dark:bg-bgDarker bg-white lg:py-20 lg:px-10"
+      className="select-none bg-white py-10 px-5 dark:bg-bgDarker lg:py-20 lg:px-10"
     >
       <div className="mx-auto max-w-screen-lg">
         <div className="grid gap-10 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
@@ -14,7 +14,7 @@ const Footer = () => {
               data-aos="fade"
               className="mb-2.5 flex items-center gap-1.5 font-semibold"
             >
-              <SiCoderwall className="rotate-90 text-xs text-blue-500 dark:text-blue-400" />
+              <SiCoderwall className="rotate-90 text-xs text-blue-500 dark:text-blue-500" />
               Logan Keene
             </h4>
             <p
@@ -60,7 +60,6 @@ const Footer = () => {
               >
                 Hollowverse
               </a>
-
             </div>
           </section>
           <section data-aos="fade" data-aos-delay="200">
@@ -116,7 +115,7 @@ const Footer = () => {
                 target="_blank"
                 className="inline-flex cursor-pointer select-none flex-nowrap items-center justify-start gap-1.5 self-start whitespace-nowrap hover:text-blue-500 dark:hover:text-blue-400 sm:transition-all"
               >
-                <FaLocationArrow className="text-xs" />
+                <FaLocationArrow className="text-xs text-blue-500" />
                 Florida, Eastern Timezone
               </div>
               <a
@@ -125,7 +124,7 @@ const Footer = () => {
                 target="_blank"
                 className="inline-flex flex-nowrap items-center justify-start gap-1.5 self-start whitespace-nowrap hover:text-blue-500 dark:hover:text-blue-400 sm:transition-all"
               >
-                <FaEnvelope className="text-xs" />
+                <FaEnvelope className="text-xs text-blue-500" />
                 rlogank@icloud.com
               </a>
               <a
@@ -134,7 +133,7 @@ const Footer = () => {
                 rel="noreferrer"
                 className="inline-flex flex-nowrap items-center justify-start gap-1.5 self-start whitespace-nowrap hover:text-blue-500 dark:hover:text-blue-400 sm:transition-all"
               >
-                <FaPaperclip className="text-xs" />
+                <FaPaperclip className="text-xs text-blue-500" />
                 Resume
               </a>
             </div>

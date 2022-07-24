@@ -11,14 +11,13 @@ import pern from "../assets/full-res/pern.png";
 import Tilt from "react-parallax-tilt";
 import { useNavigate } from "react-router-dom";
 import {
-  FaChevronLeft,
   FaChevronRight,
   FaExpandAlt,
   FaExternalLinkAlt,
   FaGithub,
 } from "react-icons/fa";
 import Btn from "../components/Btn";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import getAverageColor from "get-average-color";
 import { AnimatePresence } from "framer-motion";
 
@@ -104,6 +103,9 @@ const ProjectPage = () => {
           document.getElementById(
             project.title.replaceAll(" ", "-").toLowerCase()
           ).style.backgroundColor = `rgb(${rgb.r}, ${rgb.g}, ${rgb.b})`;
+          document.getElementById(
+            "main"
+          ).style.backgroundColor = `rgb(${rgb.r}, ${rgb.g}, ${rgb.b})`;
         });
       }
     });
@@ -155,9 +157,9 @@ const ProjectPage = () => {
                 //   </div>
                 // }
                 title={
-                  <span className="flex items-center w-full justify-between gap-5 text-white">
+                  <span className="flex w-full items-center justify-between gap-5 text-white">
                     {project.title}{" "}
-                       <button
+                    <button
                       onClick={() => {
                         navigate(
                           project === projects[projects.length - 1]
@@ -169,9 +171,9 @@ const ProjectPage = () => {
                                 .toLowerCase()}`
                         );
                       }}
-                      className="flex items-center gap-1.5 rounded-full text-base text-white transition-all duration-300 hover:bg-opacity-25 active:bg-opacity-30"
+                      className="flex items-center gap-1.5 rounded-full bg-black bg-opacity-20 p-5 text-base text-white transition-all duration-300 hover:bg-opacity-25 active:bg-opacity-30"
                     >
-                      Next <FaChevronRight className="text-xs" />
+                      <FaChevronRight className="text-sm" />
                     </button>
                   </span>
                 }
@@ -218,7 +220,7 @@ const ProjectPage = () => {
                     <img
                       src={project.screenshot}
                       alt=""
-                      className="mx-auto max-w-screen-lg w-full rounded-md object-contain"
+                      className="mx-auto w-full max-w-screen-lg rounded-md object-contain"
                     />
                   </Tilt>
                 </div>

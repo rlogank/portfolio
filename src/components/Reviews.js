@@ -27,47 +27,49 @@ const Reviews = () => {
   ];
 
   return (
-    <SectionWrapper
-      id="reviews"
-      nextId="contact"
-      title="What my"
-      span="clients are saying"
-      body="I strive to perform the highest quality of work to ensure my clients' 100% satisfaction. These are verifiable testimonials that I have recieved."
-    >
-      <section
-        data-aos="fade"
-        className="mx-auto grid w-full max-w-screen-lg lg:grid-cols-2 gap-5 sm:gap-5"
+    <div className="bg-gradient-to-tl from-blue-600 to-blue-600  text-white">
+      <SectionWrapper
+        id="reviews"
+        nextId="contact"
+        title="What my"
+        span="clients are saying"
+        body="I strive to perform the highest quality of work to ensure my clients' 100% satisfaction. These are verifiable testimonials that I have recieved."
       >
-        {reviewData.map((r, i) => {
-          return (
-            <article key={i} data-aos="fade">
-              <div className="mx-auto flex w-full rounded-[4px] shadow-md p-5 dark:border-[#111216] dark:bg-bgDark">
-                <div className="flex flex-col justify-center gap-2.5">
-                  <div className="flex justify-between">
-                    <div className="w-full">
-                      <div className="flex items-center justify-between">
-                        <h4 className="font-medium">{r.name}</h4>
-                        <div className="ml-auto flex gap-1 self-center text-blue-500 dark:text-blue-400">
-                          <FaStar />
-                          <FaStar />
-                          <FaStar />
-                          <FaStar />
-                          <FaStar />
+        <section
+          data-aos="fade"
+          className="mx-auto grid w-full max-w-screen-lg gap-5 sm:gap-5 lg:grid-cols-2"
+        >
+          {reviewData.map((r, i) => {
+            return (
+              <article key={i} data-aos="fade">
+                <div className="mx-auto flex w-full rounded-[4px] bg-white p-5 text-neutral-600 shadow-md dark:border-[#111216] dark:bg-bgDarkest dark:text-light">
+                  <div className="flex flex-col justify-center gap-2.5">
+                    <div className="flex justify-between">
+                      <div className="w-full">
+                        <div className="flex items-center justify-between">
+                          <h4 className="font-medium">{r.name}</h4>
+                          <div className="ml-auto flex gap-1 self-center text-blue-500 dark:text-blue-400">
+                            <FaStar />
+                            <FaStar />
+                            <FaStar />
+                            <FaStar />
+                            <FaStar />
+                          </div>
                         </div>
+                        <h5 className="text-left text-xs text-neutral-500 dark:text-gray-300">
+                          {r.details}
+                        </h5>
                       </div>
-                      <h5 className="text-left text-xs text-neutral-500 dark:text-gray-300">
-                        {r.details}
-                      </h5>
                     </div>
+                    <p className="text-left text-sm">{r.body}</p>
                   </div>
-                  <p className="text-left text-sm">{r.body}</p>
                 </div>
-              </div>
-            </article>
-          );
-        })}
-      </section>
-    </SectionWrapper>
+              </article>
+            );
+          })}
+        </section>
+      </SectionWrapper>
+    </div>
   );
 };
 

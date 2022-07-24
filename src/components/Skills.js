@@ -22,113 +22,113 @@ const Skills = () => {
     {
       title: <SiW3C />,
       name: "Accessibility",
-      color: "bg-indigo-300",
+      color: "text-indigo-600",
     },
 
     {
       title: <SiAntdesign />,
       name: "UX/UI",
-      color: "bg-blue-300",
+      color: "text-blue-600",
       break: false,
     },
 
     {
       title: <SiCsswizardry />,
       name: "CSS",
-      color: "bg-sky-300 ",
+      color: "text-sky-600 ",
       break: false,
     },
 
     {
       title: <SiTailwindcss />,
       name: "Tailwind",
-      color: "bg-cyan-300",
+      color: "text-cyan-600",
       break: false,
     },
     {
       title: <SiElectron />,
       name: "Electron",
-      color: "bg-teal-300",
+      color: "text-teal-600",
       break: false,
     },
     {
       title: <SiMongodb />,
       name: "Mongo",
-      color: "bg-emerald-300",
+      color: "text-emerald-600",
       break: false,
     },
     {
       title: <SiExpress />,
       name: "Express",
-      color: "bg-blue-300",
+      color: "text-blue-600",
       break: false,
     },
     {
       title: <SiReact />,
       name: "React",
-      color: "bg-sky-300",
+      color: "text-sky-600",
       break: false,
     },
     {
       title: <SiJavascript />,
       name: "JavaScript",
-      color: "bg-cyan-300",
+      color: "text-cyan-600",
       break: false,
     },
 
     {
       title: <SiHtml5 />,
       name: "HTML5",
-      color: "bg-teal-300",
+      color: "text-teal-600",
       break: false,
     },
     {
       title: <SiOpenai />,
       name: "OpenAI",
-      color: "bg-emerald-300",
+      color: "text-emerald-600",
       break: false,
     },
 
     {
       title: <SiFirebase />,
       name: "Firebase",
-      color: "bg-green-300",
+      color: "text-green-600",
       break: false,
     },
     {
       title: <SiWordpress />,
       name: "E-commerce",
-      color: "bg-sky-300",
+      color: "text-sky-600",
       break: false,
     },
     {
       title: <SiGoogle />,
       name: "SEO",
-      color: "bg-cyan-300",
+      color: "text-cyan-600",
       break: false,
     },
     {
       title: <FaPencilAlt className="text-3xl" />,
       name: "Copywriting",
-      color: "bg-teal-300",
+      color: "text-teal-600",
       break: false,
     },
     {
       title: <FaBullhorn className="text-3xl" />,
       name: "Marketing",
-      color: "bg-emerald-300",
+      color: "text-emerald-600",
       break: true,
     },
     {
       title: <FaMusic className="text-3xl" />,
       name: "Logic Pro X",
-      color: "bg-green-300",
+      color: "text-green-600",
       break: true,
     },
     {
       title: <FaSmileWink className="text-3xl" />,
       name: "Friendly person",
-      color: "bg-lime-300",
+      color: "text-lime-600",
       break: true,
     },
   ];
@@ -137,7 +137,7 @@ const Skills = () => {
 
   return (
     <section className="w-full text-neutral-700 dark:text-light sm:transition-all">
-      <div className="grid w-full grid-cols-3 justify-center justify-items-center gap-5 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6">
+      <div className="grid w-full grid-cols-3 justify-center justify-items-center gap-10 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6">
         {skillsList.map((x, i) => {
           return (
             <div
@@ -145,7 +145,7 @@ const Skills = () => {
               key={i}
               data-aos-delay={i * 100}
               className={clsx(
-                `${x.color} relative z-20 flex aspect-square w-full flex-col items-center justify-center gap-2.5 truncate rounded-[4px] bg-white bg-opacity-30 dark:border-bgDark dark:bg-bgDark dark:shadow-none sm:p-10 sm:transition-all`,
+                `text-white relative z-20 flex aspect-square w-full flex-col items-center justify-center gap-2.5 truncate rounded-[4px] bg-gradient-to-br from-blue-600 to-blue-500 dark:to-blue-600 dark:border-bgDark dark:bg-bgDark dark:shadow-none sm:p-10 sm:transition-all`,
                 x.break === true && "hidden md:flex"
               )}
             >

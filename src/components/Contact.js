@@ -104,7 +104,7 @@ const Form = () => {
             <section
               data-aos="fade"
               data-aos-delay="200"
-              className="mx-auto max-w-screen-lg rounded-[4px] dark:border-blue-400 dark:bg-bgDarkest bg-gray-100 p-5"
+              className="mx-auto max-w-screen-lg rounded-md bg-gradient-to-tl from-blue-600 to-blue-500 dark:to-blue-600 p-5 shadow-md dark:border-blue-400 dark:bg-bgDarkest"
             >
               <form
                 className=""
@@ -126,7 +126,7 @@ const Form = () => {
                       required
                       title="Name"
                       placeholder="Name"
-                      className="flex w-1/2 cursor-pointer self-center rounded-[4px] py-2 px-3.5 outline outline-transparent hover:bg-opacity-20 focus:cursor-text  focus:bg-opacity-25 focus:outline-blue-500 dark:bg-bgDark dark:focus:outline-blue-400 sm:transition-all bg-white"
+                      className="flex w-1/2 cursor-pointer self-center rounded-[4px] bg-white py-2 px-3.5 outline outline-transparent focus:cursor-text focus:outline-blue-500 dark:bg-bgDarkest dark:focus:outline-blue-400 sm:transition-all"
                     />
                     <input
                       onChange={(e) => setEmail(e.target.value)}
@@ -137,7 +137,7 @@ const Form = () => {
                       id="email"
                       required
                       placeholder="Email"
-                      className="flex w-1/2 cursor-pointer self-center rounded-[4px] py-2 px-3.5 outline outline-transparent hover:bg-opacity-20 focus:cursor-text  focus:bg-opacity-25 focus:outline-blue-500 dark:bg-bgDark dark:focus:outline-blue-400 sm:transition-all bg-white"
+                      className="flex w-1/2 cursor-pointer self-center rounded-[4px] bg-white py-2 px-3.5 outline outline-transparent focus:cursor-text focus:outline-blue-500 dark:bg-bgDarkest dark:focus:outline-blue-400 sm:transition-all"
                     />
                   </div>
                   <textarea
@@ -150,12 +150,12 @@ const Form = () => {
                     autoComplete="message"
                     required
                     placeholder="Message"
-                    className="flex w-full cursor-pointer resize-none self-center rounded-[4px] py-2 px-3.5 outline outline-transparent hover:bg-opacity-20 focus:cursor-text  focus:bg-opacity-25 focus:outline-blue-500 dark:bg-bgDark dark:focus:outline-blue-400 sm:transition-all bg-white"
+                    className="flex w-full cursor-pointer resize-none self-center rounded-[4px] bg-white py-2 px-3.5 outline outline-transparent focus:cursor-text focus:outline-blue-500 dark:bg-bgDarkest dark:focus:outline-blue-400 sm:transition-all"
                   />
                 </div>
                 <div className="flex pt-2.5 text-xs font-normal md:pt-5">
                   {showErrors && (
-                    <div className="flex flex-col">
+                    <div className="flex flex-col text-white">
                       {name.length < 2 && (
                         <div className="flex items-center gap-1">
                           <FaTimes />
@@ -183,8 +183,8 @@ const Form = () => {
                     }}
                     className={
                       !valid
-                        ? "ml-auto flex cursor-not-allowed items-center justify-center self-start rounded-[4px] bg-blue-500 px-3.5 py-2 text-sm font-medium text-white dark:bg-bgDark dark:text-gray-300 sm:transition sm:active:shadow-none"
-                        : "!-100 ml-auto flex items-center justify-center self-start rounded-[4px] bg-blue-500 px-3.5 py-2 text-sm font-medium text-white outline outline-transparent focus:shadow-none dark:bg-blue-400 dark:text-bgDarkest sm:transition sm:hover:shadow-md sm:active:scale-95 sm:active:shadow-none"
+                        ? "ml-auto flex cursor-not-allowed items-center justify-center self-start rounded-[4px] bg-white px-3.5 py-2 text-sm font-medium text-neutral-600 dark:bg-bgDarkest dark:text-light sm:transition sm:active:shadow-none"
+                        : "!-100 ml-auto flex items-center justify-center self-start rounded-[4px] bg-white px-3.5 py-2 text-sm font-medium text-neutral-600 outline outline-transparent focus:shadow-none dark:bg-bgDarkest dark:text-light sm:transition sm:hover:shadow-md sm:active:scale-95 sm:active:shadow-none"
                     }
                   >
                     {submitText ? (
@@ -194,7 +194,7 @@ const Form = () => {
                         "Submit"
                       )
                     ) : (
-                      <LoadingIcons.TailSpin className="flex h-5 w-5 justify-center self-center" />
+                      <LoadingIcons.Bars className="flex h-5 w-5 justify-center self-center bg-blue-600 rounded-full p-1" fill="#FFF" stroke="#FFF" />
                     )}
                   </button>
                 </div>

@@ -1,6 +1,6 @@
 const ProjectHeader = (props) => {
   return (
-    <div className="mx-auto flex w-full flex-col gap-2.5 bg-black dark:bg-white dark:bg-opacity-10 bg-opacity-25 py-10 px-5">
+    <div className="mx-auto flex w-full flex-col gap-2.5 bg-white dark:bg-opacity-10 bg-opacity-10 py-10 px-5">
       {props.arrows}
       <div className="mx-auto w-full max-w-screen-lg">
         <h2 className="mb-2.5 w-full text-2xl font-bold lg:text-4xl">

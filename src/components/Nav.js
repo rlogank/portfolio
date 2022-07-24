@@ -18,7 +18,7 @@ const Nav = () => {
   return (
     <nav
       data-aos="fade"
-      className="fixed z-[900] h-[60px] flex w-full items-center bg-white border-b dark:border-transparent backdrop-blur-lg p-5 dark:bg-bgDark sm:transition-all"
+      className="fixed z-[900] h-[60px] flex w-full items-center bg-white border-b dark:border-transparent backdrop-blur-lg p-5 dark:bg-bgDarkest sm:transition-all"
     >
       <div className="mx-auto flex w-full max-w-screen-lg items-center justify-between">
         <h1
